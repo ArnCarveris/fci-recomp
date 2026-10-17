@@ -1,0 +1,3 @@
+# the vendored upstream code is C++ with its pointers bound to the type; our files here follow it
+BasedOnStyle: InheritParentConfig
+PointerAlignment: Left

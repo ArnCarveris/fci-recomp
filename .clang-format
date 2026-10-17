@@ -1,0 +1,21 @@
+# Our C and C++ (src/*.c, src/kinit, src/xbr/fci_*); the vendored upstream files in src/xbr keep their own style.
+BasedOnStyle: LLVM
+IndentWidth: 4
+ColumnLimit: 110
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortBlocksOnASingleLine: Always
+AllowShortLoopsOnASingleLine: false
+AlignTrailingComments: true
+AlignConsecutiveMacros: true
+PointerAlignment: Right
+SortIncludes: Never
+IndentCaseLabels: false
+SpaceAfterCStyleCast: false
+ReflowComments: false
+BreakBeforeBinaryOperators: All
+ContinuationIndentWidth: 8
+SpacesBeforeTrailingComments: 3

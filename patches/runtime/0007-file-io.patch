@@ -1,0 +1,99 @@
+Subject: File I/O: no unbuffered host opens; bounded read logging
+
+The streamer (002C0C40) opens common.dat with FILE_NO_INTERMEDIATE_BUFFERING. As host
+FILE_FLAG_NO_BUFFERING it made every unaligned position change fail, the game's tracked offset
+drifted and Story Mode loaded forever. The Xbox kernel checks no alignment, so the flag is not
+passed on. Read logging keeps the first 2000 reads and names a file the first time it is read at
+its end; RECOMP_SEEK_TRACE logs seeks and position queries.
+
+---
+diff --git a/src/kernel/kernel_bridge.c b/src/kernel/kernel_bridge.c
+--- a/src/kernel/kernel_bridge.c
++++ b/src/kernel/kernel_bridge.c
+@@ -3474,7 +3474,16 @@
+          * whatever precedes the file it actually wants, and a read that stops
+          * early looks identical to one that never started -- until you can
+          * see where each one landed. */
+-        if (poff)
++        static unsigned read_logged;
++        if (read_logged++ >= 2000) {
++            if (read_logged % 1000000u == 0) {   /* a sample, named */
++                char path[MAX_PATH] = "?";
++                GetFinalPathNameByHandleA((HANDLE)handle, path, sizeof path, 0);
++                fprintf(stderr, "  [READ] #%u %s want=%u got=%u st=0x%08X\n", read_logged, path,
++                        length, got, (uint32_t)ios.Status);
++            }
++        }
++        else if (poff)
+             fprintf(stderr, "  [READ] from=0x%08X ev=%08X apc=%08X @%lld want=%u got=%u st=0x%08X  %02X %02X %02X %02X\n",
+                     g_xbox_kernel_caller, STACK_ARG(1), STACK_ARG(2),
+                     (long long)off.QuadPart, length, got,
+@@ -3488,6 +3497,19 @@
+                     got > 0 ? p[0] : 0, got > 1 ? p[1] : 0,
+                     got > 2 ? p[2] : 0, got > 3 ? p[3] : 0);
+         fflush(stderr);
++    }
++    if ((uint32_t)ios.Status == 0xC0000011u) {   /* which file reads at EOF */
++        static HANDLE named[32];
++        static int nnamed;
++        int k, seen = 0;
++        for (k = 0; k < nnamed; k++)
++            seen |= named[k] == (HANDLE)handle;
++        if (!seen && nnamed < 32) {
++            char path[MAX_PATH] = "?";
++            named[nnamed++] = (HANDLE)handle;
++            GetFinalPathNameByHandleA((HANDLE)handle, path, sizeof path, 0);
++            fprintf(stderr, "  [READ] end of file on %s (from 0x%08X)\n", path, g_xbox_kernel_caller);
++        }
+     }
+     bridge_write_iostatus(iostatus, ios.Status, (uint32_t)ios.Information);
+     bridge_complete_file_io(STACK_ARG(1), STACK_ARG(2), STACK_ARG(3),
+diff --git a/src/kernel/kernel_file.c b/src/kernel/kernel_file.c
+--- a/src/kernel/kernel_file.c
++++ b/src/kernel/kernel_file.c
+@@ -185,8 +185,7 @@
+             xbox_share_to_win32(ShareAccess), NULL, OPEN_EXISTING,
+             FILE_FLAG_BACKUP_SEMANTICS, NULL);
+     } else {
+-        if (CreateOptions & XBOX_FILE_NO_INTERMEDIATE_BUFFERING)
+-            flags_and_attrs |= FILE_FLAG_NO_BUFFERING;
++        /* XBOX_FILE_NO_INTERMEDIATE_BUFFERING is not passed on */
+         if (FileAttributes & XBOX_FILE_ATTRIBUTE_READONLY)
+             flags_and_attrs |= FILE_ATTRIBUTE_READONLY;
+         h = CreateFileW(win_path, xbox_access_to_win32(DesiredAccess),
+@@ -372,8 +371,16 @@
+             PXBOX_FILE_POSITION_INFORMATION info = (PXBOX_FILE_POSITION_INFORMATION)FileInformation;
+             LARGE_INTEGER pos, zero;
+             zero.QuadPart = 0;
+-            if (!SetFilePointerEx(FileHandle, zero, &pos, FILE_CURRENT))
++            if (!SetFilePointerEx(FileHandle, zero, &pos, FILE_CURRENT)) {
++                if (GetEnvironmentVariableA("RECOMP_SEEK_TRACE", NULL, 0))
++                    fprintf(stderr, "  [SEEK] position query failed (%lu)\n", GetLastError());
+                 return STATUS_UNSUCCESSFUL;
++            }
++            if (GetEnvironmentVariableA("RECOMP_SEEK_TRACE", NULL, 0)) {
++                static unsigned queries;
++                if (queries++ < 400)
++                    fprintf(stderr, "  [SEEK] position query -> %lld\n", (long long)pos.QuadPart);
++            }
+             info->CurrentByteOffset = pos;
+             IoStatusBlock->Status = STATUS_SUCCESS;
+             IoStatusBlock->Information = sizeof(XBOX_FILE_POSITION_INFORMATION);
+@@ -416,6 +423,17 @@
+     switch (FileInformationClass) {
+         case XboxFilePositionInformation: {
+             PXBOX_FILE_POSITION_INFORMATION info = (PXBOX_FILE_POSITION_INFORMATION)FileInformation;
++            if (GetEnvironmentVariableA("RECOMP_SEEK_TRACE", NULL, 0)) {
++                static unsigned seeks;
++                if (seeks++ < 400) {
++                    char path[MAX_PATH] = "?";
++                    LARGE_INTEGER size = {0};
++                    GetFinalPathNameByHandleA(FileHandle, path, sizeof path, 0);
++                    GetFileSizeEx(FileHandle, &size);
++                    fprintf(stderr, "  [SEEK] %s -> %lld (size %lld)\n", path,
++                            (long long)info->CurrentByteOffset.QuadPart, (long long)size.QuadPart);
++                }
++            }
+             if (!SetFilePointerEx(FileHandle, info->CurrentByteOffset, NULL, FILE_BEGIN)) {
+                 xbox_log(XBOX_LOG_WARN, XBOX_LOG_FILE,
+                     "SetFilePosition failed: offset=%lld err=%u",

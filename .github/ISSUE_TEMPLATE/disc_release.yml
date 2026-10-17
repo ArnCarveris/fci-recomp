@@ -1,0 +1,19 @@
+name: Another disc release
+description: The build script says your disc is not the supported release
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Only the hashes, please: never the files themselves or links to them.
+  - type: input
+    id: region
+    attributes:
+      label: Which release
+      description: Region and edition (for example PAL, Platinum Hits), as printed on the disc or case.
+  - type: textarea
+    id: hashes
+    attributes:
+      label: What the build script printed
+      render: text
+    validations:
+      required: true

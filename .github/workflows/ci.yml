@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install the tools
+        run: python -m pip install -r requirements-dev.txt
+
+      - name: No game files
+        run: python -B tools/repo_check.py
+
+      - name: Lint
+        run: |
+          ruff check .
+          ruff format --check .
+
+      - name: C and C++ formatting
+        shell: bash
+        run: clang-format --dry-run --Werror $(git ls-files 'src/fci_*.c' 'src/fci_*.h' 'src/kinit/*.c' 'src/xbr/fci_*.cpp' 'src/xbr/fci_*.h')
+
+      - name: Reverse-engineering database
+        run: python -B tools/re_db.py check
+
+      - name: Fetch the pinned toolkit
+        run: python -B tools/deps.py build/deps
+
+      # the patches apply, the lifter tests pass, and the patched runtime compiles with MSVC
+      - name: Tests
+        run: python -m pytest -v

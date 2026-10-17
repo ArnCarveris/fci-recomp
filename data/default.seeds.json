@@ -1,0 +1,7119 @@
+[
+{
+"start": "0x0001211D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00012846",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00012848",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00012ACC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000130BE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001337C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00013418",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000134BB",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000134BD",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000135E9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000136BE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001400C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000148E9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00014AE9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00014C98",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00014E74",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00014E78",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00014E7B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000153FD",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000163E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000163E9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00016AE9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00017457",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000180CA",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000180CB",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000180CE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000180CF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001916B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001AB84",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001AB8C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001AB8D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001B439",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001BBC6",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001CBE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001CBE9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001CC45",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001CF83",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001CF84",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001CF85",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001D083",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001D084",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001D085",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001D086",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001D087",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001D089",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001D08D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001DCB8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001DCBB",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0001DEA2",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002016C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002016E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000202C7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00020383",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00020384",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00020385",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00020386",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002038B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000206C7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00020765",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00021ADC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00021C7A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00021CBD",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00022D8B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00022E83",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00022E84",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002369E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000238C2",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00023CB8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00023CB9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00023CBF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00023D97",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00023DE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002414C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000241A8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000241E9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00026089",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002608D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002608E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002608F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00029A88",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002C2E9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002CD0B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002D265",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002D267",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002D4B5",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002D4BE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002D824",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002D82D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002D985",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002D987",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002D98B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002DF8D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002DF8E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0002F88E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00030025",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00030026",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00030027",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00030028",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003002D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003002F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000300AE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000300FC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003037D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003040C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000306C7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003089D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003090C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00031C8D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003318E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00033C04",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000346C6",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000354E7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00036172",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00037AE9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00038095",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00038096",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000388DC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003A183",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003A18D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003A624",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003B4FC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003B985",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003B986",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003D445",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003E0BB",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003E9E9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003EA6E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003EDE9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003F43A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003F6DD",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003F99F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003FC8B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003FC8C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0003FC8F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004002A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004002B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004002C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004002D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004002E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00040344",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00040348",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004034C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00040885",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00040887",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004088E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000408FE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000419BB",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00042CC4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004488E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00044C24",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004509F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004589F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00045A85",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00045A87",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00046096",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00046AE9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00046E4C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000477BC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00049088",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004908D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004BDFE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004BE00",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004BE04",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004BE05",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004BE0A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004C254",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004C256",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004C258",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004C259",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004C25B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004C25C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004C25D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004C25E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004C25F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004D478",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004D9EC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004E89D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004EB0C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0004EFE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0005000E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00051E28",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0005245A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0005320D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00053384",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00055238",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0005578E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00056165",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0005B08D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0005B9FF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0005BBA7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0005C00E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0005C05E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0005D3F4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0005D401",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0005D424",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0005D42C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0005D445",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0005D888",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00060E0D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006414C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006448E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006634C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000664BE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00066D3C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000672FB",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006888B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00068C24",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000699EE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006A0AF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006A4AC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006B08D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006B096",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006B097",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006B09F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006D28C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006D2E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006E48A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006E48B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006E48E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006E514",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0006E7E9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000700E9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007019C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00070483",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00070488",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007048B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00070608",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00070C24",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00071A6B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000744A7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00074D3C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007507C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00075204",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00076E5B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00077497",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00077499",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000775E9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000799B6",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007A418",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007B85B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007B85E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007B85F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BCA0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BD74",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BD7C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BD88",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BD90",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x0007BDC3",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BDC7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BDD8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BDDB",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BDF0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BDF8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BDFF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BE00",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BE04",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BE05",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BE07",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BE08",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BE10",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BE7C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BE88",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BEF8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BEFF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BF00",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BF04",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BF08",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BF0C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BF54",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BF7C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BFC0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BFD5",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BFDB",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BFE0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BFE7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BFE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BFED",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BFF0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007BFFF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007C024",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007CFE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007EEE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0007FE48",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008007D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008094E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008228C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008228E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000824E9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008252C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000827AA",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000827B8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00085C86",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00085C8E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00086BC4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00086BE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00086C9E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008744C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00089684",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00089784",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00089C28",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008BEA5",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008C259",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008C25B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008C25C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008C25D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008C25E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008C25F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008C260",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008C264",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008C268",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008C26C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008C270",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008C27C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008C2E6",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008C2E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008C838",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008CE87",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008CE89",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008FB4C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0008FDA3",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00090438",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00090708",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00090D9E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0009308B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000948E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0009748F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00098909",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0009892D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00098931",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00098951",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00098975",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000993E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0009A20D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0009B05D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0009B89B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0009CC24",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0009FF58",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0009FFB0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A0000",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A0001",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A0002",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A0003",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A0004",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A0005",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A0006",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A0007",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A0008",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A0009",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A000A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A000D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A002E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A1468",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A1FB8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A23C8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A2455",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A8CBF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000A9085",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000AC9D8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000ACA50",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x000ADBAC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000B002D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000B002F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000B5AF8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000B8308",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000BA45C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000BB83D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000BB85D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000BB85E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000BBB87",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000BD92C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000BF48C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000C17A0",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x000C17B0",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x000C1804",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000C1810",
+"evidence": "measured runtime target (visible stop)",
+"observed": true
+},
+{
+"start": "0x000C1C06",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000C1C08",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000C1CC4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000C2348",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000C23BB",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000C23C0",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x000C2998",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000C47E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000C5268",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000C6583",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000C8189",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000C8508",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000C8B84",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000C9A1C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000CB62C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000CC21C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000CC2FF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000CCFE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000CCFF0",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x000CDC86",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000CECBE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000CEE68",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000CEF44",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000D04E7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000D04F4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000D04FC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000D0C45",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000D0D1A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000D1486",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000D2BE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000D56D8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000D56F0",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x000D7084",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000D902D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000DFCFE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000E0008",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000E0009",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000E000C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000E000D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000E000E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000E248D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000E248E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000E248F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000E890D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000EC7E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000F0FE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000F1E23",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000F2978",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000F6684",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000F868B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000FC08F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000FDA14",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000FE00C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000FE3A0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000FE3BE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000FE3C3",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000FE3C8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x000FE3CD",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0010293C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001068B3",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00106CBE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00107C0C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00107E83",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00109C08",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0010BFE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0010C198",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0010C238",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0010C23C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0010CFE9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0011282C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0011408C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0011408D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001146C6",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00115FDF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00118801",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0011B184",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0011DFE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00121024",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0012A1F0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0012A2CC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0012ABE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0012B0EC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0012F5DC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00130603",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00130D01",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00138883",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0013BE05",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0013C588",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0013DB88",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00144AD4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0014508E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00149F48",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0014C1A4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0014D486",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0014D4BE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0014D616",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0014EFE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00151FE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00152728",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0015272C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00157B30",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00157C18",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00157C82",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00157C86",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00157C91",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0015B320",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0015D424",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0015E024",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0015E028",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0015FF56",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00160013",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00160015",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00160016",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00160023",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00160028",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00160040",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00160082",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00163618",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0016F068",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0016FD7C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0017042C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00174130",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0017418C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00174640",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x001773E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00178C1C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0017998C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0017F7B8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0017FEEF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001808FC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00181C13",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00181FB8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00182568",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00183469",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0018658F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001865DC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00189A9C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0018A28C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0018D43C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00190B1E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00191186",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00192D0C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00192D20",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0019557C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0019870C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00199E5C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0019A14C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0019A328",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0019A714",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0019AFA8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0019AFCA",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0019B76C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0019B8C3",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0019B8CC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0019BEC8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0019FACC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001A84AE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001A8ABB",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001A99B0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001A9A3C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001AA8C7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001AD7BC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001AF224",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001B0AA4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001B1ADC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001B4880",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001B5DEC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001B6788",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001B72B4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001B73E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001BDBF8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001BDF5C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001C0BE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001C0BEC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001C0DB0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001C0DD4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001C182D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001C192C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001C3C80",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x001C3D0C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001C3D54",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001C3F2C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001C3F68",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001C3FA8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001C3FE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001C8D58",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001C92A8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001C97D4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001CA7D7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001CC23C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001D05C8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001D4F8C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001D8B64",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001D8CAC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001DB7B0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001DEB04",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001E105C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001E12EC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001E131C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001E1C74",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001E1CFC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001E210C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001E75D8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001ECC08",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001EE0EC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001EF2FE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001F001C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001F001E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001F001F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001F0BDC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001F1C78",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001F1E4E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001F2620",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001F319C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001F40F9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001F53E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001F68A8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001F7000",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001F947E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001FA018",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x001FB6E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0020101B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00201FE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00206CBE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00207792",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0020789E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00208366",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0020BA20",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0020BA60",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x0020BAC4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0020BACF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0020BB3C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0020BB40",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0020BBA4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0020BBC0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0020BBE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0020BC84",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0020BD1A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0020BDB0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0020BE0C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0020EE6D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0020FD5C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00215F3C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0021661D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00216C24",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00218366",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0021D03E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0021E80C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0021F7E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0022708B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0022C8E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00230028",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0023002B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0023074A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00238CB8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0023B0A9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0023C8BC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0023D348",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0023D66C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002462EC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00246478",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002464E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00246504",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002484E4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00248FC5",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0024EC54",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0025261C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002544E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00259998",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00262CAC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00263256",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00264E3C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0026503F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00265D5B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00267BE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0026809C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0026837F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0026ABE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0026F178",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002702EC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00270558",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0027190E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002726FC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00274024",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00275E9C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00276C6C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00276FAC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00277AEC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00278306",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0027879C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002790CC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0027C3D6",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0027CD0A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00284400",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x00284420",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002845D8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00284600",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x00289EF0",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x0028CF3C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002916B8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002916D8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002916DA",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00291C30",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00291C5C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0029275D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00292764",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00293EE0",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x00293FCD",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00293FEF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00294011",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00294033",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00294080",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x00295CC4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00296D65",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00297EAC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0029C31D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0029C7C6",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0029F3DC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002A2DF0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002A2E2A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002A2ECA",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002A3064",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002A5308",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002A5E6C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002A6FE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002AC3E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002B879C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002B87E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002B9330",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002B9351",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002BED7C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C32E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C4258",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C44B8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C4698",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C46C6",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C46C7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C46EC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C4978",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C4E84",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C527C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C52E4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C5334",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C578C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C5790",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C57E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C5984",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C5994",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C59B4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C608C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C6100",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C6124",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C6488",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C6824",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C74FC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C764C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C7975",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C7983",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C7984",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C79A0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C7A4C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C7C24",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C7DE4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C7E00",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C7E08",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C7E48",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C7ED9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C80F0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C8518",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C858C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C85C0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C85D0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C8DD8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C8F5C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C8F74",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C8F78",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C9618",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C9648",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C96A0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C96C8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C9718",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002C9738",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CA3B4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CA3DC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CA830",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CA888",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CAC8C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CB434",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CB4AA",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CB4D0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CB7D8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CB7E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CB800",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CB840",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CB848",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CB856",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CB857",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CB85C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CB8B4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CBC70",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CBE14",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CC61C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CC78C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CC8D8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CC9A8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CCD48",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CDCB1",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CDCB3",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CDCB7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002CDF28",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002D100F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002D4BE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002DD165",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002E002D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002E002E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002E2E2E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002E726F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002EC3BF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002ED1FE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002F0078",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002F4E88",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002F6648",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002F9BE4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002F9BE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002FDF28",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x002FF618",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003041C6",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00304C54",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0030566C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003084AC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0030AE9C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0030C5D0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0030C854",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0030E348",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0030E568",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0030EEA8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00311DC6",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0031268C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003126A8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00312AC8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003157E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00318CC7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003220AE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00324A68",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003253F8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0032546F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00326B68",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0032B038",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0032E8DE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0033CFB4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0033DE1D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0033DE7E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0033F058",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00340FE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003414B8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0034305F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00345C78",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00346464",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00346490",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x00346D6F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0034A70E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0034B108",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0034CFE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0034D3E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00353DA4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00353FC8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00355DBC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00355DBF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00356C28",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00358EDA",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0035ADB0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0035ADD4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0035ADE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0035ADFD",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0035AE17",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0035D5F8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0035D60C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0035D63C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0035D644",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0035D64C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0035D654",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0035D688",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0035D69C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0035EB1C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0035F600",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0035FE20",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00360628",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00360650",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00365AA0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00365BAC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003663BC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00368CF0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00368D00",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00369F54",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0036BC08",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0036E362",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0036E368",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0036ECBA",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0036F30E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00370035",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00370036",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00370037",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003839FA",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00384714",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003849FE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003896CA",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0038BFFE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003A583C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003B7B4A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003BBBE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003C8390",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x003CC8A8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003D1845",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003EEDF1",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x003F83FF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x004004BB",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0040A7E0",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x0040A8FE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0041007B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0041A7C9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x004224A8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00422510",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x004225A2",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00423370",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x00436B90",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x00450180",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x0046646C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0046CC9F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x004843C7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x004864E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00487B74",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00487FE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00489005",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0049308F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x004944BE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00495A70",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x00498D1A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00498D1B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00498D1C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00498D1E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00498D1F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00498DD1",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00498DD2",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00498DD5",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00498DD6",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00498DD7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00498DD8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00498DDA",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00498DDB",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00498DDD",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x004A79E4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x004D98C7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x004E1F00",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x004E2068",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x004E454B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x004E81CF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x004E9AE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x004EF325",
+"evidence": "measured runtime target (visible stop)",
+"observed": true
+},
+{
+"start": "0x005006D8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00500DE0",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x00500E50",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x00503EE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0050414D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005046C7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005047C7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005047F7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00504FE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0050554F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0050608B",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x00506095",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0050609F",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x005060A9",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x005060B3",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x00509170",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00509C2C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0050A080",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0050DFB4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00515100",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00515120",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005151B8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005151F8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005152E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00515630",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x005157F8",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x00515A00",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00516000",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005160A8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005160F0",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x00516100",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0051614C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00516150",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00516248",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00516254",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00516268",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00516274",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00516280",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00516298",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005162AC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005163A0",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x005163C0",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x005163E0",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x00516400",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0051643C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00516498",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005164AC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005164B0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005164C0",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x00516800",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517000",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005170B0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005170C0",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x005170C8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005170D0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005170D8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005170E4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005170F0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0051710C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517110",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517118",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0051711C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517120",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517128",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517134",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517138",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x00517150",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x00517160",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0051716C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517174",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517190",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005171A0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005171B4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005171E0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005171E4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005171EC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005171F0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517234",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517260",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517264",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0051726C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517274",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005172B4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005172E0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005172F0",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0051730C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517318",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517320",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517330",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005173C4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005173C8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005173CC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005173D0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005173D4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005173D8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005173DC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005173E0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005173EC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005173F0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005173F4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517408",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517414",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517424",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517450",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517454",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517478",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0051747C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517498",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005174DC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517504",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0051750C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517510",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517514",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517518",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0051751C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517528",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0051752C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517530",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517540",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517548",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517558",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0051755C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517560",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517564",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517568",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517574",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517578",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517580",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517584",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00517588",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005196E9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00519A20",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00519A28",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00519AE0",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x00519BF8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00519D10",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00519D14",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00519D18",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x00519D28",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00519D2C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00519D30",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00519D38",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00519D40",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00519D44",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00519D48",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00519D4C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00519D54",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00519D58",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00519D64",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00526D8B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00528165",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0052CC7C",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0052CC80",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0052CC81",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0052CD30",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0052CDD0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0052CDD4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0052CDD8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00534310",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x00535B28",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0053EA2B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00551C0C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00551C39",
+"evidence": "measured runtime target (visible stop)",
+"observed": true
+},
+{
+"start": "0x00551C4D",
+"evidence": "measured runtime target (visible stop)",
+"observed": true
+},
+{
+"start": "0x00557BD7",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B05",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B06",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B08",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B09",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B0B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B0C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B0D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B0E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B10",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B11",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B16",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B17",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B18",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B1A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B1C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B20",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B22",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B23",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B24",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B25",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B26",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B28",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B29",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B2C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B30",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B33",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B34",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B36",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B37",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B38",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B3C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B3F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B40",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B43",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B44",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B48",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B49",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B4C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B50",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B51",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B52",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B54",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B58",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B5C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B66",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B6C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B70",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B74",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B76",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B79",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B7C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558B84",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558BB0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558BC0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558BC3",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558BCD",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558BDC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558BE2",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558BF0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558BFD",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558BFF",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558C14",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558C30",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558C60",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558C84",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558CB8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558CF8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558D3C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558D64",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558D7C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558D90",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558DC4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558DD8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558DE0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558DFC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558E1C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558E3C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558E5C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558E6C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558E8C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558EC8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558F04",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558F0C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558F34",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558F58",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558F70",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558F94",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558FBC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558FD8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00558FFC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559020",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055904C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559088",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005590AC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005590D4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005590E4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005590FC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559110",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055912C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559158",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559174",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055919C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005591C8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005591F8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055923C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055927C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055928C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005592B0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005592C4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005592DC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559304",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559328",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559348",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559374",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005593AC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005593CC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005593EC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559410",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055943C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055946C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559498",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005594C8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005594F8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559520",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559548",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559578",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559598",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005595C4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005595F0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559614",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055963C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559658",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559688",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055969C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005596C4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005596EC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055972C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559748",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055975C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055978C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005597B0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005597D4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005597FC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055982C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559844",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559868",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055987C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559894",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005598BC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005598D0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005598E4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005598F8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559910",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559924",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055994C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559974",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055999C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005599B8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005599E4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559A00",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559A50",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559A7C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559A9C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559AB4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559AEC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559B24",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559B48",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559B64",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559B94",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559BD4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559BE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559C00",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559C18",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559C40",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559C60",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559C7C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559CA4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559CC4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559D00",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00559FF0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055A022",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055A109",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055A72C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055A744",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055A754",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055A768",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055A774",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0055A784",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00574440",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578068",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005786E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578718",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578758",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057878C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005787A0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005787B4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005787D4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578894",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005788C4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005788FC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005789E0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578BFC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578C5C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578C60",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578C64",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578C68",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578C6C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578C70",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578C74",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578C78",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578C7C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578C80",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578C84",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578C8C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578C94",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578C98",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578C9C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578CA0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578CA4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578CB0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578CCC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578CF0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578D38",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578DEC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578E20",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578E40",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578F3C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578F58",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578F74",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578F98",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578FB8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578FDC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00578FFC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057901C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057903C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579060",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579080",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579098",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005790B4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005790C4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005790D8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005790E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005790FC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579110",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579128",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579138",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579148",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579158",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579168",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579178",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579188",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579198",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005791A8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005791B8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005791C8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005791D8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005791EC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057920C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057922C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057924C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057926C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057928C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005792AC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005792CC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005792F0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579304",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579318",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057932C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579340",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579354",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579368",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057937C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579390",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005793B0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005793C0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005793D8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005793F4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579414",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579426",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579434",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579450",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579458",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579480",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057949C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005794B8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005794D4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005794F4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579510",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579530",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579550",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579568",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579580",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579598",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005795B8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005795D4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005795F0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057960C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579624",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579640",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057965C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579674",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579690",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005796AC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005796C8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005796E4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579700",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579748",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005797C4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005797FC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057984C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579854",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579E48",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579E68",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00579F38",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x00579F64",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x00579F94",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x00579FB8",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x00579FE4",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A000",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A01C",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A048",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A074",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A080",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A0B4",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A0E8",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A118",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A138",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A158",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A188",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A190",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A1BC",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A1E8",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A214",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A240",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A254",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A270",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A28C",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A2B0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A2BC",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A2E0",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A314",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A320",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A32C",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A354",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A36C",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A378",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A3A0",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A3C4",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A3E0",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A3F8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A420",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A52C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A538",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A558",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A578",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A580",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A5AC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A5DC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A608",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A62C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A6BC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A6C4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A6C8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A6DC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A6E4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A6E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A704",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A728",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A7AC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A830",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A840",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A848",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A874",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A890",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A918",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A930",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057A9C4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057AA74",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057AAE4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057AB10",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057AC58",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057AC5C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057ACC8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057AD30",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057AD60",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057ADBC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057AE54",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057AEE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057AFF0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B008",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B044",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B091",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B092",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B094",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B098",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B0A0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B0A8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B0B0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B0B8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B0C0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B0C8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B0D0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B114",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B120",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B12C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B154",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B15C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B160",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B4E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B7E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B805",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B807",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B809",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B80A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B8F2",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057B930",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057BAF3",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057BD16",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0057BD18",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057BD1C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057BD20",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057BD24",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057BD28",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057BD2C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0057BD30",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00587824",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00587830",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0058799C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00587B83",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00588068",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00588DE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00588FE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0058A164",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0058B819",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0058B853",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0058B856",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0058B857",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0058B900",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0058B910",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0058B97B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0058B9AB",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0058B9C0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0058BA05",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0058D2E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0058D3E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0058D886",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0058E3E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00590002",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059002E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00590057",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00590058",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059007B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00590FF3",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005915E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005917E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00591C82",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00593086",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059308B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00593096",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005930B6",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005930B8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00593486",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059348B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059349E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005934BE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00593FE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00594244",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005943E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00594441",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00594649",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00594E41",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059524F",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00595355",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005953E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00595449",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00595C86",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00595F68",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00595FE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00596086",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00596886",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00596C86",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00596C8E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00597081",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00597086",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059708E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005970BE",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00597465",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00597486",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005978B2",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00597AE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00598082",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005983E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00598496",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059888E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00598896",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005989E9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00598C86",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00598CE9",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00598FE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599483",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599486",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059948B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059948E",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005996E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599886",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599E28",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x00599E38",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x00599E48",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599E78",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599EB8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599EE0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599F2C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599F34",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599F38",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599F3C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599F44",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599F4C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599F54",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599F7C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599F9C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599FCC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x00599FEC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A008",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A024",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A04C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A058",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A05C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A0D0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A0F8",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A100",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A120",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A138",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A13C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A140",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A150",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A154",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A16C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A178",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A17B",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A180",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A18C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A194",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A1A8",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A774",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A77C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A780",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A790",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A798",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A80C",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A82C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A830",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A838",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A83C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A840",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A848",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A850",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A858",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A860",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A8E0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A8E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A8F4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A8FC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A900",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A908",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A918",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A92C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A93C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A95C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A978",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A998",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x0059A9E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059B44A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x0059DEE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005A2D47",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x005A2EDF",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x005A35B8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005A35EC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005A3620",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005A3654",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005A3688",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005A36BC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005A3804",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005A3D66",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005A3EE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005A47E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005A4AE8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005A6683",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005A8279",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005A827A",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005A84E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005A8705",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x005A8F30",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x005B1A38",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005B5AA0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005B5F90",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x005B6940",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x005B6C20",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005B7D40",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x005B8080",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005B8180",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x005B8FE0",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x005B92C0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005B97E0",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x005B97E8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BA4A0",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x005BA780",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BACA0",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x005BB450",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x005BB9A0",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x005BBCA0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BC940",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BC9E0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BCAA0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BCB40",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BCC80",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BCEE0",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x005BD1E0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BD3E0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BD5A0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BD820",
+"evidence": "pointer to a padded function start inside a detected function",
+"observed": true
+},
+{
+"start": "0x005BDB40",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDCA4",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDCAC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDCB4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDCCC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDCD0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDCE0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDCEC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDCF0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDD24",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDD3C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDD54",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDD60",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDD64",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDD7C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDD80",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDD84",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDDA8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDDB4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDDC0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDDCC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDDD8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDDF0",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDE08",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDE09",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDE14",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDE20",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDE38",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDE58",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDE64",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDE6C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDE70",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDE9C",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDEAC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDEB4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDEB8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDEE4",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDEF8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDEFC",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDF14",
+"evidence": "instruction immediate into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDF15",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDF20",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005BDF24",
+"evidence": "measured runtime target (visible stop)",
+"observed": true
+},
+{
+"start": "0x005BE720",
+"evidence": "measured runtime target (visible stop)",
+"observed": true
+},
+{
+"start": "0x005BF0B8",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005C2D15",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005C5DEB",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005C5E3D",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005C6220",
+"evidence": "data pointer into code not covered by any base-lift function"
+},
+{
+"start": "0x005C683F",
+"evidence": "data pointer into code not covered by any base-lift function"
+}
+]

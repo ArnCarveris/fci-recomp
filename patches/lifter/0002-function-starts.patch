@@ -1,0 +1,44 @@
+Subject: Function detection: tails reached by a jcc, starts reached only by tail jumps
+
+A conditional jump never enters another function, so a gap after a ret that a jcc reaches is a
+tail, not a function (003915E0's free-and-return tail at 00391762 lost its frame and failed a
+stack cookie check). A target of an unconditional jmp from outside the owning function is a tail
+call and so a function start, even without a prologue (00226B10).
+
+---
+diff --git a/tools/disasm/functions.py b/tools/disasm/functions.py
+--- a/tools/disasm/functions.py
++++ b/tools/disasm/functions.py
+@@ -201,12 +201,20 @@
+             return not (i >= 0 and addr < bounds[i][1])
+ 
+         added = False
++        cond_targets = {i.jump_target for i in self.engine.instructions.values()
++                        if i.is_cond_jump and i.jump_target is not None}
++        jmp_sources = {}
++        for i in self.engine.instructions.values():
++            if i.is_jump and i.jump_target is not None:
++                jmp_sources.setdefault(i.jump_target, []).append(i.address)
+         for insn in list(self.engine.instructions.values()):
+             if not insn.is_ret:
+                 continue
+             nxt = insn.end_address
+             if nxt in self._candidates or nxt in self.functions:
+                 continue
++            if nxt in cond_targets:
++                continue                    # a tail reached by a jcc
+             section = self.image.get_section_at_va(nxt)
+             if section is None or not section.executable:
+                 continue
+@@ -225,7 +233,10 @@
+             # instructions appear 795 times *inside* larger functions as a
+             # return path, and splitting one of those would cut a function in
+             # half -- but those are covered, so they are not in a gap.
+-            if not (self.engine.probes_as_prologue(nxt)
++            owner = bisect.bisect_right(starts, insn.address) - 1
++            lo, hi = bounds[owner] if owner >= 0 else (insn.address, insn.address + 1)
++            tail_called = any(not (lo <= src < hi) for src in jmp_sources.get(nxt, ()))
++            if not (tail_called or self.engine.probes_as_prologue(nxt)
+                     or self.engine.probes_as_constant_stub(nxt)):
+                 continue
+             self._add_candidate(nxt, config.CONFIDENCE_CC_BOUNDARY,

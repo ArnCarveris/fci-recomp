@@ -1,0 +1,508 @@
+{
+ "comment": "Far Cry Instincts (original Xbox), the one disc release this project supports: every file's size and SHA-256, from a verified dump. tools/disc.py checks a disc against it.",
+ "title_id": "55530008",
+ "version": 1,
+ "not_copied": [
+  "dashupdate.xbe",
+  "downloader.xbe",
+  "update.xbe"
+ ],
+ "files": {
+  "common.dat": {
+   "size": 10733408,
+   "sha256": "c6a36b938af76e06d8b00e6159ad535472790591f3e7bc917e3ba53c66c1ebaf"
+  },
+  "common.fat": {
+   "size": 11936,
+   "sha256": "94b16121fa14e88ae4f74f10c46850c170d6ad97f6649a990c5523cdca323db3"
+  },
+  "dashupdate.xbe": {
+   "size": 58421248,
+   "sha256": "fec2278ce828ccb40085a941af66fd48fdec7db233571712909093aa33787fd3"
+  },
+  "default.xbe": {
+   "size": 6684672,
+   "sha256": "9796c818c350a05e6756bd6f87e7cbe5e028e9b7b30563c674df9ea019fc4ae1"
+  },
+  "downloader.xbe": {
+   "size": 1150976,
+   "sha256": "36daf2951ced44a9380476a347b0c4be67df6b54303dca0b2ce8fb3b3f32c6e5"
+  },
+  "DVDsound.dat": {
+   "size": 251931484,
+   "sha256": "9156e578c4266b8e2bcafdf2d3fd1e9d9c99d1da282f3b41738d0020c08b277e"
+  },
+  "DVDsound.fat": {
+   "size": 8384,
+   "sha256": "cc931fc113a24d8ab8742a5fba1baffaec86d17a7a94bdae7b415a5bcce17c6e"
+  },
+  "farcryed.dat": {
+   "size": 49928963,
+   "sha256": "ab06b5985c4b180ed0327c8e074d06f1989d59bed5931e2d8cecc7f5c78d4c76"
+  },
+  "farcryed.fat": {
+   "size": 21680,
+   "sha256": "c75cb5cb27e378835219dc2f471d21defbcd8da4b78684cd8915b7102d2169c3"
+  },
+  "HDsound.dat": {
+   "size": 107198464,
+   "sha256": "03ace0ad0a701644ab91c87cf4b3f67eebf7f716e49570ec626b07af1902a788"
+  },
+  "HDsound.fat": {
+   "size": 368,
+   "sha256": "b3823cbb63847cc8628f5dcf1b55daaa4b61eecd19c1353935fa67c16799bcd9"
+  },
+  "ige.xbe": {
+   "size": 6619136,
+   "sha256": "8d6f9da1c2d9e588f8e4eaf4ad8a68a0212ca1310adb76616bf31e8f489b1968"
+  },
+  "levels/00_Training/00_training.dat": {
+   "size": 30956287,
+   "sha256": "fc3a8b14d25d0c3d7d91ff84db103124437df0210b20b29c17db27d295e9b89b"
+  },
+  "levels/00_Training/00_training.fat": {
+   "size": 28724,
+   "sha256": "34a195e4f6257c79d767fab1fa1f3901e3eb24ba4121c3d65acb42adc3f1817a"
+  },
+  "levels/01_Beach/01_Beach.dat": {
+   "size": 42747145,
+   "sha256": "ab374e56d1dcead3200478dd41ce2061a334c88e067c49743f2d2d03da2fc455"
+  },
+  "levels/01_Beach/01_Beach.fat": {
+   "size": 31052,
+   "sha256": "234213b61f598966216197d8f68a7a17726828670e39d8e22512e9c7952051b2"
+  },
+  "levels/02_Native/02_Native.dat": {
+   "size": 50370316,
+   "sha256": "256a70a59e157ecfb20ac1275665d2ec24e0db295159d24ad3969f7083288697"
+  },
+  "levels/02_Native/02_Native.fat": {
+   "size": 33296,
+   "sha256": "70a3295b3601c931ffb5c28cbcf165107df1e0ecea9b2891274de41fc180050f"
+  },
+  "levels/03_River/03_River.dat": {
+   "size": 52152545,
+   "sha256": "583021f9e4360fd1fb781a5307c83b8f7ffb5de24459988ff9411e3cdcb7fe11"
+  },
+  "levels/03_River/03_River.fat": {
+   "size": 31544,
+   "sha256": "02b65f60bad2f4825fce93c075c3749bcfe2f647985b8db7655f7d691c8ffee1"
+  },
+  "levels/04_Rain_Forest/04_Rain_Forest.dat": {
+   "size": 49833653,
+   "sha256": "2b674cc3baa536ae2e87db904bd9ba0012ddd6aee9e2f53715d5937740b4ec3e"
+  },
+  "levels/04_Rain_Forest/04_Rain_Forest.fat": {
+   "size": 35720,
+   "sha256": "6ad8908d0494ff06487a9bfc8c5b7bd64c0b384bf48174376e901a1b97740f0e"
+  },
+  "levels/05_Mines/05_mines.dat": {
+   "size": 28327662,
+   "sha256": "0a74cfcb58caa261a6b5e3b93da8147157a53b1d74578b9b44c26e3e047983e5"
+  },
+  "levels/05_Mines/05_mines.fat": {
+   "size": 29780,
+   "sha256": "0ab1f639140559c76de56fc6341bddfd9634994b49d79447075358bf797c2811"
+  },
+  "levels/06_Cliffs/06_cliffs.dat": {
+   "size": 49746017,
+   "sha256": "3ebd8910dee25d4e58b361ea2649782a1ad30a9d3749f59538450d2619f8c123"
+  },
+  "levels/06_Cliffs/06_cliffs.fat": {
+   "size": 33644,
+   "sha256": "7d2a76e2a91d404c0a690961489361e72a235d2430e57646348d9df7d23029b9"
+  },
+  "levels/07_Sub-Aquatic_Facility/07_Sub-Aquatic_Facility.dat": {
+   "size": 47496341,
+   "sha256": "e7ea193a02e2fe68442c8208b25802022b9cd68ad17568c62a870cef217d7b01"
+  },
+  "levels/07_Sub-Aquatic_Facility/07_Sub-Aquatic_Facility.fat": {
+   "size": 36692,
+   "sha256": "67553044adfec20a53174035276fc0c383ee9dad2da04e9c22dd8a12d49109ad"
+  },
+  "levels/10_Dead_Marshes/10_Dead_Marshes.dat": {
+   "size": 35309748,
+   "sha256": "bc3f36ce480832ed0207ed3fb644256f7c65d412dd7925946bb8922fd43286ab"
+  },
+  "levels/10_Dead_Marshes/10_Dead_Marshes.fat": {
+   "size": 31376,
+   "sha256": "a860730ede69c30c51964044107bebd15e61191f91c01acf4da94f3c54eff7d6"
+  },
+  "levels/11_Wasteland/11_Wasteland.dat": {
+   "size": 52789947,
+   "sha256": "ae243ac790da7485f128ef56c30e7675c1b7b1f69b5e6d14630b0241f7ba033e"
+  },
+  "levels/11_Wasteland/11_Wasteland.fat": {
+   "size": 33584,
+   "sha256": "01d0ce1407923a301e4e2168c695c0db7f34e640b70778b893a60e8d54b50d7e"
+  },
+  "levels/13_Black_Forest/13_Black_Forest.dat": {
+   "size": 52295713,
+   "sha256": "49b01b5d52b002559d7db14372dbcb42f1713c230ee5e99fcf318626d90bb10d"
+  },
+  "levels/13_Black_Forest/13_Black_Forest.fat": {
+   "size": 35648,
+   "sha256": "e9730808382606cf605b9a49c5dc45f0a659756327cc75ed9c902c4cca6bcec6"
+  },
+  "levels/M01_MercyCreek/m01_mercycreek.dat": {
+   "size": 14400233,
+   "sha256": "49b48635eb17697c8d9af8f2ba46b2f249d61b956affa7d160d6e1059a1f8d88"
+  },
+  "levels/M01_MercyCreek/m01_mercycreek.fat": {
+   "size": 11156,
+   "sha256": "0b7688cb99db2b1e0d966a96b5aee34a38aba748a0ee7d412b4295c2d2e26eee"
+  },
+  "levels/M03_IdolGold/m03_idolgold.dat": {
+   "size": 13698026,
+   "sha256": "8e60730e92c9b184b33785340fdf38bd58c0a9384d32a29a856f209c3142feb5"
+  },
+  "levels/M03_IdolGold/m03_idolgold.fat": {
+   "size": 11684,
+   "sha256": "5f75542e7c273eb109e5fd1e030a25fd59fef2eb21a09aebf7cd493f484b73c2"
+  },
+  "levels/M04_TerrorLake/m04_terrorlake.dat": {
+   "size": 14688710,
+   "sha256": "a9aaa1cffd5979ec337b60ef3109347e9a40003e0678f5dbae3cf6c2ceeabed7"
+  },
+  "levels/M04_TerrorLake/m04_terrorlake.fat": {
+   "size": 11348,
+   "sha256": "2b11583abb85c55c89852b47a5d35175d9fa1e0b7304f942d861f330bbb1dcc2"
+  },
+  "levels/M05_RiverCity/m05_rivercity.dat": {
+   "size": 16467742,
+   "sha256": "8f4ceb4015266b4c4853d30fa67244f029d9739195aba3d2324dc1d29d48bf8e"
+  },
+  "levels/M05_RiverCity/m05_rivercity.fat": {
+   "size": 12944,
+   "sha256": "88f1fbcff0c8e0bf66ce264c01c73da61da336dcc6bd4ec5d4f8fd3c5319a9af"
+  },
+  "levels/M06_ArcaneAsylum/m06_arcaneasylum.dat": {
+   "size": 13527024,
+   "sha256": "88eae08b524afc93ba64794b17cda554754855bd7b319735e9b70243ee07f1d2"
+  },
+  "levels/M06_ArcaneAsylum/m06_arcaneasylum.fat": {
+   "size": 10472,
+   "sha256": "2aa86f29b1b15199cf8a35d452d962ffad371210ef79fcae76c65daf645209cc"
+  },
+  "levels/M07_DesertHaven/m07_deserthaven.dat": {
+   "size": 15800452,
+   "sha256": "4eef9f9f76723ef09b5c91981c309ddefb3934a8694b0005bb720b9c68d923bc"
+  },
+  "levels/M07_DesertHaven/m07_deserthaven.fat": {
+   "size": 12116,
+   "sha256": "263c777349251d35bdb672aee67e617e1592ec10a13e06ae8b2d546b7931a4d2"
+  },
+  "levels/M09_ValorBeach/m09_valorbeach.dat": {
+   "size": 17874659,
+   "sha256": "2e9cae4f4bbcf4e18f157c0a44a4ff20d64d00952f387e6e8630606213136729"
+  },
+  "levels/M09_ValorBeach/m09_valorbeach.fat": {
+   "size": 13760,
+   "sha256": "15d7759ee0274a4d9def232a1077b0fba0f1fe8d3562a7cccbf52daacc2e6490"
+  },
+  "levels/M10_HuntingtonPark/m10_huntingtonpark.dat": {
+   "size": 12081767,
+   "sha256": "be2108f13aba6d68057e168169338e7cd8a81b68b59032aafe01b9b8feef7a36"
+  },
+  "levels/M10_HuntingtonPark/m10_huntingtonpark.fat": {
+   "size": 10112,
+   "sha256": "afaf4a97a2a7497cafa55553721001f40ad10579def676a1eb8b11e98e50194e"
+  },
+  "levels/M10_HuntingtonParkSTS/m10_huntingtonparksts.dat": {
+   "size": 11677088,
+   "sha256": "e34d26d581e2b50fdece29e87d61b0497da6254c9ea34652745637582bc129ca"
+  },
+  "levels/M10_HuntingtonParkSTS/m10_huntingtonparksts.fat": {
+   "size": 10016,
+   "sha256": "af0ffbb2ed49caeeb8da2f5a599e73b1b34f2808bb95f80eef9d2e2e94883bad"
+  },
+  "levels/M11_Temple/m11_temple.dat": {
+   "size": 12590874,
+   "sha256": "e32fc306562e077a5f160559335eb831cf45770989bfafbbbff1e5842fa41bbd"
+  },
+  "levels/M11_Temple/m11_temple.fat": {
+   "size": 10448,
+   "sha256": "506e5efc80de799c49bd8007974f1a09e2726870b56fe3636db53e5468ca369e"
+  },
+  "levels/M12_Warehouse/m12_warehouse.dat": {
+   "size": 13622795,
+   "sha256": "6b2fe2b2d7c123df76b2dc6cc56530d8111dc77e189b4fe9dc7aac32859ff4ad"
+  },
+  "levels/M12_Warehouse/m12_warehouse.fat": {
+   "size": 10928,
+   "sha256": "38f211c9e86847d66154449c29b6ed37c2ee51b9b653c4fe87532402847530da"
+  },
+  "levels/M13_Longhorn/m13_longhorn.dat": {
+   "size": 20219951,
+   "sha256": "df31b1b32cf4f3f2117ae2c581955e7ef663ea095146a3169a5963908f1be1ca"
+  },
+  "levels/M13_Longhorn/m13_longhorn.fat": {
+   "size": 12980,
+   "sha256": "b373d730254348209d0485a3b03f4a270276a5ec724ebaa51e7ae3dc74b01d39"
+  },
+  "levels/M14_Solarium/m14_solarium.dat": {
+   "size": 13825229,
+   "sha256": "e3d25342f88b727f20556984bc148cf0c82746895cb995156223fe4d032ad5ce"
+  },
+  "levels/M14_Solarium/m14_solarium.fat": {
+   "size": 11240,
+   "sha256": "1a4e92e7df5431c9cf9c1d5e1d1665ce2a91620717e49b1aded945112181bb9b"
+  },
+  "levels/M16_TropicalForest/m16_tropicalforest.dat": {
+   "size": 14574821,
+   "sha256": "c1f5d4c86d0970a99959e97065a87bf8e1957e5ab194884814c19f8b4df1029f"
+  },
+  "levels/M16_TropicalForest/m16_tropicalforest.fat": {
+   "size": 12428,
+   "sha256": "83a5110b2c912d6e7a431eba5bdfe1189fe982a7e4813e8a2d54adaee05dc45e"
+  },
+  "levels/M17_Altar/m17_altar.dat": {
+   "size": 12965401,
+   "sha256": "fb639a2498af0bee40c9d3136c076adcbe347d231e0cbfdbe30ba00918741b3d"
+  },
+  "levels/M17_Altar/m17_altar.fat": {
+   "size": 12152,
+   "sha256": "9afad390b1c750ee4a875c402e27f6f82eea5a86abbf07e545088ce0500389c6"
+  },
+  "levels/MET_Beach_Military/met_beach_military.dat": {
+   "size": 15325206,
+   "sha256": "858df7fee391375f0b9204a164dd1742b1f4aab7e84d25f9482ff53c468156be"
+  },
+  "levels/MET_Beach_Military/met_beach_military.fat": {
+   "size": 10592,
+   "sha256": "f283ac952057e046fd58d4c5b2dd166a7d0ca5d5a216d52e85eac85f729af9db"
+  },
+  "levels/MET_Beach_Research/met_beach_research.dat": {
+   "size": 15312996,
+   "sha256": "76b62e032caf0adc31c128d79fe2da5db5377456cce8a80b0aeb7552ab017992"
+  },
+  "levels/MET_Beach_Research/met_beach_research.fat": {
+   "size": 10604,
+   "sha256": "15dc71573feaeca4d36e08ef3632587aeb0803e01d6e313f46fb3aefc1fec36d"
+  },
+  "levels/MET_Beach_Ruins/met_beach_ruins.dat": {
+   "size": 15461807,
+   "sha256": "5a676fa296d47104c1f7e817d392e6c4bcb167a3fb3fae18e84af8dce4e645aa"
+  },
+  "levels/MET_Beach_Ruins/met_beach_ruins.fat": {
+   "size": 10568,
+   "sha256": "8088e27d5488c8db2b4c91a666f68f1f2ac1f19652cd3a891b0530ab062b7985"
+  },
+  "levels/MET_Dependency/met_dependency.dat": {
+   "size": 11233082,
+   "sha256": "7edac0bdcf2f9aeb721c174066fb961bd98f6cf7fbd629acfa6922b236ee7214"
+  },
+  "levels/MET_Dependency/met_dependency.fat": {
+   "size": 10484,
+   "sha256": "540ace28ff9aeb4ca6f4d5c1c4e99326e55d66224c53e2a02286d5afe325fab7"
+  },
+  "levels/MET_Jungle_Military/met_jungle_military.dat": {
+   "size": 16144823,
+   "sha256": "9b431d5050a6b9e77912dc755ec38a78f98ea2b1c46ac4cbc8f7f6366197a0aa"
+  },
+  "levels/MET_Jungle_Military/met_jungle_military.fat": {
+   "size": 10688,
+   "sha256": "075ed1fcc72a5d37e9a96975ac97a2f0ac453fb24af67aa8412233014e179bc7"
+  },
+  "levels/MET_Jungle_Research/met_jungle_research.dat": {
+   "size": 16192253,
+   "sha256": "b224367a2aaf52955219b7893a09986afa0ad281c529d1bcfc30458cd5e02c64"
+  },
+  "levels/MET_Jungle_Research/met_jungle_research.fat": {
+   "size": 10712,
+   "sha256": "40a848e88a3444abcef63ea4edc1a6f548aabb818895b22c946ce8981f17f13d"
+  },
+  "levels/MET_Jungle_Ruins/met_jungle_ruins.dat": {
+   "size": 16368062,
+   "sha256": "4c4a45d1963bb8511a787b65c662472041adc8d3c2f6e7b4388c302290a4a3bf"
+  },
+  "levels/MET_Jungle_Ruins/met_jungle_ruins.fat": {
+   "size": 10676,
+   "sha256": "1d6296398b08799c3a3ae0ecbcbc2db3c5418804fc04561fa82987dfef6516a1"
+  },
+  "levels/MET_Swamp_Military/met_swamp_military.dat": {
+   "size": 15842907,
+   "sha256": "4ffe031d74bde20c5db99aea64f5400cead602d04f980b65479efd536b5bf8f8"
+  },
+  "levels/MET_Swamp_Military/met_swamp_military.fat": {
+   "size": 10640,
+   "sha256": "4a753e39cfbe6d140d8ba7c441d0052e2a80683021dacfe23d448812211f89bc"
+  },
+  "levels/MET_Swamp_Research/met_swamp_research.dat": {
+   "size": 15806705,
+   "sha256": "66f25ce7c5f4800484d7a47008b6749054a625be789d70cb14aa549a895628fd"
+  },
+  "levels/MET_Swamp_Research/met_swamp_research.fat": {
+   "size": 10664,
+   "sha256": "1bec62bd09a6ef2407c3b0437c1cfbbc9f4cdc6e5c9f9f8dea3312609ff9bce4"
+  },
+  "levels/MET_Swamp_Ruins/met_swamp_ruins.dat": {
+   "size": 15983666,
+   "sha256": "3913036b1be6dde4110c31a19e54d2838edcdbcbb14e7fef2a8ee1333f1975d9"
+  },
+  "levels/MET_Swamp_Ruins/met_swamp_ruins.fat": {
+   "size": 10628,
+   "sha256": "8d7247bf0efcd91587c7bbd79ca84a1906f8f9eceda4a6631f8f75a9a5b60c80"
+  },
+  "liveupdate.dat": {
+   "size": 29015,
+   "sha256": "81bab372d43d3080e95872b43597e8df86cf65efcd9f65cd6de37bfd39f7b7e8"
+  },
+  "liveupdate.fat": {
+   "size": 44,
+   "sha256": "f24b1ba06df72c8cd22e37c94c47b00928b9fb9f5fa3f503c981e8bf969fd751"
+  },
+  "lua.dat": {
+   "size": 1635883,
+   "sha256": "3e1627ce4cfbb204ab4e582e781faac2ee5b3ded12d19f1d405e27be6a4c9153"
+  },
+  "lua.fat": {
+   "size": 4856,
+   "sha256": "8d1925371cb05c5ef664c438590c5f49f65f7e81f2b59c2c049eaf61be749775"
+  },
+  "media/ArialUni.Ttf": {
+   "size": 23274572,
+   "sha256": "58e770f0690df91f847b2eb71b5bea357e3ebea51203682cc19b91d74810480e"
+  },
+  "media/dlcustom.xpr": {
+   "size": 1574912,
+   "sha256": "a36efb3038b26a866702af55443e78d6fb2ebb796d63d47aecd4c4051c7b785e"
+  },
+  "media/Sound.xsb": {
+   "size": 684,
+   "sha256": "beab472ec813941530caafedc62d0e85f88d3b855d642fe527cc0b542030e569"
+  },
+  "media/Wave.xwb": {
+   "size": 190012,
+   "sha256": "25a5ea6b6fb2f62fbc3b1247d36498e3b6caf88bb98bbb78648fc5ea6e5679dd"
+  },
+  "sounds_xb/dsstdfx.bin": {
+   "size": 18608,
+   "sha256": "abbcabe339455786fda506c9427005a1881958b3e31ab3ba889342232cba6f52"
+  },
+  "sounds_xb/English/GameCommon.LS2": {
+   "size": 65001472,
+   "sha256": "be6761b57d3327531f2bbb737a3b60f3c6af9296f11fcc0cdd2e7dda6d46afa2"
+  },
+  "sounds_xb/English/SingleMaps.LS2": {
+   "size": 49661952,
+   "sha256": "3fa3b46cef4793aa6a4444771790ac1a6d623752708a7facf69a989d18a218a8"
+  },
+  "sounds_xb/French/GameCommon.LS2": {
+   "size": 61388800,
+   "sha256": "7c83df79578ba24271c075c9af63941c856b2876b3d6ca7a2d0ea78bd5e84d32"
+  },
+  "sounds_xb/French/SingleMaps.LS2": {
+   "size": 47968256,
+   "sha256": "26569a8e8d4142d9d1d7b4f1982272d93d9978a7fe0c89f8474464d716720122"
+  },
+  "sounds_xb/GameCommon.SS2": {
+   "size": 102875136,
+   "sha256": "5fdd73703e0eff3fcb1768ebd0b22e192bba166647427759cea2352d12e49ce6"
+  },
+  "sounds_xb/Italian/GameCommon.LS2": {
+   "size": 62126080,
+   "sha256": "cd554060a7b04fae42b4743fd64adbc1639401386d48c8c19faec5741496f770"
+  },
+  "sounds_xb/Italian/SingleMaps.LS2": {
+   "size": 50962432,
+   "sha256": "96f36479af85dbdd1217597bc8705be523b8d849d2fd9f52c4ac21d233a3432a"
+  },
+  "sounds_xb/M_MenuMusic.SS2": {
+   "size": 33300480,
+   "sha256": "7bc5a6ecb1a45eaabf32dbe258676cf614463411473aa59535112c3990016928"
+  },
+  "sounds_xb/MultiplayerMaps.SS2": {
+   "size": 19077120,
+   "sha256": "88eb71149dfeb43d4182f0000a89539421970fa751af889b531f52d6d9bd2305"
+  },
+  "sounds_xb/SingleMaps.SS2": {
+   "size": 110168064,
+   "sha256": "afe74043e2f7b19d92e31f4d70d0f8e0539794be6fb7e7f55040215ed4b30956"
+  },
+  "sounds_xb/Spanish/GameCommon.LS2": {
+   "size": 61487104,
+   "sha256": "7df67287834f5c90e22c1700d899514f385cdbf0a77af3db94e422d51f4df2e4"
+  },
+  "sounds_xb/Spanish/SingleMaps.LS2": {
+   "size": 48766976,
+   "sha256": "8c334aa1fa46cf43c8141ffd0a2ab28cb795cb08b2236c0cd8150a12d854db01"
+  },
+  "update.xbe": {
+   "size": 2342912,
+   "sha256": "428eb2cc50b99fc2177103d876f25ac76efc71523f55bf54ebed7988f74b58d9"
+  },
+  "Videos/Attract_Mode.bik": {
+   "size": 63583964,
+   "sha256": "44eaba9d40d4e481ecdfdb8fb9d9f7baab06a4bbb5c0878baff0f805f2990e1a"
+  },
+  "Videos/Credits.bik": {
+   "size": 9244524,
+   "sha256": "c5caf03b3e73fbd17ad1d7d7a96f7aa8307c5ab35936c9857a7abc9944e41573"
+  },
+  "Videos/Crytek.bik": {
+   "size": 1589352,
+   "sha256": "6b2297b4581c8da91a9874287097c0ef5595a8eed83f5e33f1bc57697b8c4fbd"
+  },
+  "Videos/FCI_02.bik": {
+   "size": 26080984,
+   "sha256": "dc8dd9f717715b1d81d409824073742a5d2c7ff11b8043cb4fc12bbba166b782"
+  },
+  "Videos/intro.bik": {
+   "size": 29415212,
+   "sha256": "d262df979fb5c89c4c9cdf5807c0ee9f7bfbdac2aae42bf1b80eb548cfad75fe"
+  },
+  "Videos/Intro_FCI.bik": {
+   "size": 12694164,
+   "sha256": "77d8d8345b52f26597751c38540dfb87d4faacefb04394e9ed2d89e21b94014e"
+  },
+  "Videos/MAP_EDITOR.bik": {
+   "size": 122399024,
+   "sha256": "e7fa7eb4a644746acfb4accbf1bd1d27dc8ef5db6c8d9888fbc791328d07053a"
+  },
+  "Videos/MenusBack_sun.bik": {
+   "size": 4002376,
+   "sha256": "34a271d60adcf891335c30b65701e365e0b4cdee41324800db9956c1490ce8df"
+  },
+  "Videos/MULTI.bik": {
+   "size": 53835540,
+   "sha256": "021bcab89bd9856455f4b4f95cdbd5680dd7abe36e155cf62ac66e87e040b204"
+  },
+  "Videos/PREDATOR.bik": {
+   "size": 60179296,
+   "sha256": "b7f9ef1c24e5bbe5f612df221d1c57957ee13d8b3f305ca951b8b3230fe60661"
+  },
+  "Videos/PREDATOR_MULTI.bik": {
+   "size": 58281740,
+   "sha256": "6b3b9c0f7428363d5da0f63fc8a34a5355509cc6acc615c2d744060592d2c689"
+  },
+  "Videos/Previews_GR3_ntsc.bik": {
+   "size": 37589296,
+   "sha256": "9bfc438b1af79178076e07fc76e7c5fa1f7ac01ab43a873d965950b238c47293"
+  },
+  "Videos/Previews_R6L.bik": {
+   "size": 63308012,
+   "sha256": "0c262310743f8bf213166966229d16a13e8967e64c9dc20c8a5385d8633e371e"
+  },
+  "Videos/PREY.bik": {
+   "size": 43166612,
+   "sha256": "334d160e0f534385dc57e3d619e8e1a9cd5725a1d4d9045fa39910c8930b98f1"
+  },
+  "Videos/StartMenu_boat.bik": {
+   "size": 2262060,
+   "sha256": "9c6c192331750ff1815fadb7057ac13291459d9c80689d6dd7e19bd8d47eac95"
+  },
+  "Videos/Ubisoft.bik": {
+   "size": 2044944,
+   "sha256": "499da3e08637b98225b71dbada2ac2606334e3f92a162a13205b58d0ed51d08b"
+  },
+  "weaponpack.dat": {
+   "size": 3816281,
+   "sha256": "14afddf84dd3ddded8c817b153545c407eed3144fd429516462108985ada0d85"
+  },
+  "weaponpack.fat": {
+   "size": 7820,
+   "sha256": "582ca9a0b5e2810fec6b8e1dac749dc9a6028a312425f58194ec6261edb5bcbd"
+  }
+ }
+}

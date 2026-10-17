@@ -1,0 +1,35 @@
+name: Bug report
+description: The game or the build stopped, crashed or did something wrong
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please don't attach game files, disc images or links to them; issues with those are deleted.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: stop
+    attributes:
+      label: The stop line or error
+      description: The `[FCI] STOP` line from the log, or the build script's error message.
+      render: text
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: Attach the session log from `%APPDATA%\fci-recomp\logs` (it contains no game data).
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The release or commit, from `Far Cry Instincts\build.json`.
+  - type: input
+    id: system
+    attributes:
+      label: System
+      description: Windows version, GPU, and whether Visual Studio or the downloaded compiler was used.

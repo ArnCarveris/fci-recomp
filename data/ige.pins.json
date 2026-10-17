@@ -1,0 +1,25 @@
+{
+  "image_sha256": "8d6f9da1c2d9e588f8e4eaf4ad8a68a0212ca1310adb76616bf31e8f489b1968",
+  "symbols": {
+    "XMemAlloc": {
+      "va": "0x00059770",
+      "evidence": "Original editor surface creator004FAE30 calls00059770 for header/data with64800000/B6800000 attributes."
+    },
+    "XMemFree": {
+      "va": "0x00059850",
+      "evidence": "Same editor surface creator frees header via00059850 after failed data allocation; verified original calls."
+    },
+    "D3DDevice_RunPushBuffer": {
+      "va": "0x004FAFE0",
+      "evidence": "Unique128-byte main-vs-editor instruction match with only relocatable operands masked; image-pin-matches.json."
+    },
+    "D3DDevice_BeginVisibilityTest": {
+      "va": "0x004F1750",
+      "evidence": "Same body as main 00507230: push 0x000817C8 (CLEAR_REPORT_VALUE 1, ZPASS_PIXEL_COUNT_ENABLE 1); only caller the editor's query object 00321AD0."
+    },
+    "D3DDevice_EndVisibilityTest": {
+      "va": "0x004F17F0",
+      "evidence": "Same body as main 005072D0: slot from 004F1780 (device+0x7D4 page table, ret 4), slot+12 ~0, push 0x000817CC (ZPASS_PIXEL_COUNT_ENABLE 0, GET_REPORT); only caller 00321B60."
+    }
+  }
+}

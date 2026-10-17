@@ -1,0 +1,82 @@
+{
+  "id": "fci-original-xbox-editor",
+  "image_name": "ige.xbe",
+  "image_sha256": "8d6f9da1c2d9e588f8e4eaf4ad8a68a0212ca1310adb76616bf31e8f489b1968",
+  "image_bytes": 6619136,
+  "entry_va": "0x0005AD50",
+  "code_end": "0x00710A94",
+  "descriptor_helper": "0x0005FBA4",
+  "descriptor_jump": "0x0005FBC4",
+  "replacements": {
+    "sub_0005FBA4": [
+      "override",
+      "Same37-byte descriptor helper as main004B03B4, unique original instruction match except relocated far jump; image-pin-matches.json."
+    ],
+    "sub_0006A1D0": [
+      "prehook",
+      "Console_RegisterFloat (re/symbols/ige.xbe.json): records the variable and applies RECOMP_CVAR_<name> (fci_cvars.c), as the game's 001FDCD0"
+    ],
+    "sub_0006A380": [
+      "prehook",
+      "Console_RegisterInt (re/symbols/ige.xbe.json): as Console_RegisterFloat, as the game's 001FDED0"
+    ]
+  },
+  "evidence": "descriptor helper: the original 37 bytes compared (hash and masked) with the game's 004B03B4; allocator and push buffer pins verified independently.",
+  "supplemental_entries": [
+    {
+      "start": "0x004A33A3",
+      "end": "0x004A33CD",
+      "evidence": "measured editor dispatch stop; original instructions independently inspected"
+    },
+    {
+      "start": "0x00499E1F",
+      "end": "0x00499E87",
+      "evidence": "measured editor dispatch stop; original instructions independently inspected"
+    },
+    {
+      "start": "0x00504EA9",
+      "end": "0x00504EBD",
+      "evidence": "Original D3DX vtable005F23E8 slot3 points here; original independent body ends ret4 at00504EBA."
+    },
+    {
+      "start": "0x00504EBD",
+      "end": "0x00504EDC",
+      "evidence": "measured editor dispatch stop; original instructions independently inspected"
+    },
+    {
+      "start": "0x0026A330",
+      "end": "0x0026A38F",
+      "evidence": "measured editor dispatch stop; original instructions independently inspected"
+    },
+    {
+      "start": "0x0022FFF0",
+      "end": "0x0023002B",
+      "evidence": "STOP 81 in Jump In Map (2026-10-14). Original callback registered by push 0x22FFF0 at 002302E5; starts after int3 padding at 0022FFE4..EF, ends ret at 0023002A. The disassembler absorbed it into a misdecoded sub_0022FFC8."
+    },
+    {
+      "start": "0x0049DB39",
+      "end": "0x0049DB46",
+      "evidence": "CRT exp special-case table at .data 00630262 (unaligned; after the string exp) holds 0049DA09, 0049DFAD, 0049DFB2, 0049DB39; STOP 81 at 0049DA09 on the terrain raise (Y) in the editor, 2026-10-14. Original fragment ends ret at 0049DB45."
+    },
+    {
+      "start": "0x0049DFB2",
+      "end": "0x0049DFDD",
+      "evidence": "CRT exp special-case table at .data 00630262 (unaligned; after the string exp) holds 0049DA09, 0049DFAD, 0049DFB2, 0049DB39; STOP 81 at 0049DA09 on the terrain raise (Y) in the editor, 2026-10-14. Original fragment ends ret at 0049DFDC."
+    },
+    {
+      "start": "0x0049DA09",
+      "end": "0x0049DA3E",
+      "evidence": "CRT exp special-case table at .data 00630262 (unaligned; after the string exp) holds 0049DA09, 0049DFAD, 0049DFB2, 0049DB39; STOP 81 at 0049DA09 on the terrain raise (Y) in the editor, 2026-10-14. Original fragment ends jmp 0049DF98 at 0049DA39."
+    }
+  ],
+  "supplement_translator": {
+    "comment": "the editor's CRT exception and setjmp helpers, for the supplemental entries' translation (tools/lift.py)",
+    "seh_prolog": [
+      "0x00497F14",
+      "0x0049BF08"
+    ],
+    "seh_epilog": "0x00497F4F",
+    "setjmp": "0x0049B994",
+    "longjmp": "0x0049B918"
+  }
+}

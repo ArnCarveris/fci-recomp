@@ -1,0 +1,22 @@
+# Settings for the development tools; the build itself needs only requirements.txt.
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+src = [".", "tools", "tests"]
+extend-exclude = ["build", "research"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "I"]
+ignore = [
+    "E731",  # a named lambda is fine for one-line helpers
+    "B904",  # SystemExit with a message from an except clause is how the tools report errors
+    "B905",  # zip over sequences of known equal length
+]
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider -p no:faulthandler"

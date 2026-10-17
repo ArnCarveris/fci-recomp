@@ -1,0 +1,88 @@
+Subject: Software rasterizer: no shared counters in the pixel loop, cheaper texel addressing
+
+Every raster worker incremented the same statistics for each pixel, so one cache line bounced
+between cores (the main menu drew at 16 frames/s). Counts are kept per worker and added once per
+triangle. The guest memory base is read once, power-of-two wrap is a mask and the DXT cache slot
+uses a shift.
+
+---
+diff --git a/src/kernel/nv2a_pb_exec.c b/src/kernel/nv2a_pb_exec.c
+--- a/src/kernel/nv2a_pb_exec.c
++++ b/src/kernel/nv2a_pb_exec.c
+@@ -833,6 +833,8 @@
+     int32_t sc = (int32_t)c, n = (int32_t)size;
+     if (!size)
+         return 0;
++    if (mode == 1 && !(size & (size - 1)))   /* power of two */
++        return c & (size - 1);
+     if (mode == 1)                         /* wrap */
+         return (uint32_t)(((sc % n) + n) % n);
+     return sc < 0 ? 0u : (sc >= n ? size - 1 : c);   /* clamp, and the rest */
+@@ -869,7 +871,9 @@
+ static int sample_tex(const Texture *t, uint32_t face_offset,
+                       uint32_t u, uint32_t v, uint32_t *argb)
+ {
+-    const uint8_t *mem = (const uint8_t *)xbox_GetMemoryOffset();
++    static const uint8_t *s_mem_base;
++    const uint8_t *mem = s_mem_base ? s_mem_base
++                       : (s_mem_base = (const uint8_t *)xbox_GetMemoryOffset());
+     const uint8_t *p;
+     uint32_t fmt, base = t->offset + face_offset;
+ 
+@@ -893,7 +897,7 @@
+         uint32_t bx = u >> 2, by = v >> 2, bw = (t->width + 3) >> 2;
+         const uint8_t *blk = mem + base + ((size_t)by * bw + bx) * bb;
+         uintptr_t key = (uintptr_t)blk;
+-        size_t slot = ((key / bb) ^ (key >> 16)) & 4095;
++        size_t slot = ((key >> (bb == 8 ? 3 : 4)) ^ (key >> 16)) & 4095;
+         uint64_t raw[2] = {0, 0};
+         memcpy(raw, blk, bb);
+         if (cache[slot].key != key || cache[slot].fmt != fmt
+@@ -1138,6 +1142,7 @@
+ }
+ 
+ static uint32_t pack_color(const float c[4]);
++static int s_xf_rows_active;   /* workers running, no shared stats */
+ 
+ /* One GL blend factor, per channel (r g b a). */
+ static void blend_factor(uint32_t f, const float s[4], const float d[4],
+@@ -1177,9 +1182,11 @@
+         return;
+     if (y < (int)s_gpu.clip_y || y >= (int)(s_gpu.clip_y + s_gpu.clip_h))
+         return;
+-    s_gpu.pixels++;
+-    if ((argb & 0x00FFFFFFu) > (s_gpu.pixel_max & 0x00FFFFFFu))
+-        s_gpu.pixel_max = argb;
++    if (!s_xf_rows_active) {
++        s_gpu.pixels++;
++        if ((argb & 0x00FFFFFFu) > (s_gpu.pixel_max & 0x00FFFFFFu))
++            s_gpu.pixel_max = argb;
++    }
+     row = s_surface + (size_t)y * s_gpu.pitch;
+ 
+     /* Blending, with the GL factor set and equations the NV2A takes.
+@@ -1918,8 +1925,11 @@
+     int k = (int)(intptr_t)arg;
+     for (;;) {
+         WaitForSingleObject(s_pool.start[k], INFINITE);
+-        memset(&s_pool.cnt[k], 0, sizeof s_pool.cnt[k]);
+-        xf_rows(s_pool.tri, s_pool.tri->miny + k, s_pool.n, &s_pool.cnt[k]);
++        {   /* no shared counter lines */
++            XfCount mine = {0, 0, 0};
++            xf_rows(s_pool.tri, s_pool.tri->miny + k, s_pool.n, &mine);
++            s_pool.cnt[k] = mine;
++        }
+         if (InterlockedDecrement(&s_pool.pending) == 0)
+             SetEvent(s_pool.done);
+     }
+@@ -2070,7 +2080,10 @@
+     s_gpu.xf_drawn++;
+     T.inv_area = 1.0f / area;
+ 
++    s_xf_rows_active = 1;
+     xf_rows_parallel(&T, &cnt);
++    s_xf_rows_active = 0;
++    s_gpu.pixels += cnt.pixels;
+     s_gpu.xf_depth_fail += cnt.depth_fail;
+     s_gpu.xf_pixels += cnt.pixels;
+     s_gpu.zpass_count += cnt.zpass;

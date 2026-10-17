@@ -1,0 +1,38 @@
+Subject: Contiguous memory: reuse freed blocks, deferred until the renderer is done with them
+
+With host DirectSound the contiguous window reuses freed blocks, so long sessions do not run its
+64 MiB out. A block the game frees is handed back only after the host renderer's queued draws
+that read it have run (fci_contig_defer, src/xbr/xdk/d3d8.cpp).
+
+---
+diff --git a/src/kernel/xbox_memory_layout.c b/src/kernel/xbox_memory_layout.c
+--- a/src/kernel/xbox_memory_layout.c
++++ b/src/kernel/xbox_memory_layout.c
+@@ -3098,7 +3098,8 @@
+ uint32_t xbox_ContiguousAlloc(uint32_t size, uint32_t alignment)
+ {
+     uint32_t result = 0;
+-    int reclaim = xbox_HeapReclaimEnabled();
++    extern int fci_contig_reuse(void);
++    int reclaim = xbox_HeapReclaimEnabled() && fci_contig_reuse();
+     int i;
+ 
+     if (alignment < 4096) alignment = 4096;
+@@ -3160,7 +3161,17 @@
+ 
+ /* Give a block back (RECOMP_HEAP_RECLAIM only). Returns 0 when the address is
+  * not one this arena tracks, so the caller can try the general heap. */
++int xbox_ContiguousFreeNow(uint32_t addr);
++uint32_t xbox_ContiguousBlockSize(uint32_t addr);
+ int xbox_ContiguousFree(uint32_t addr)
++{
++    extern int fci_contig_defer(uint32_t addr);
++    if (xbox_ContiguousBlockSize(addr) && fci_contig_defer(addr))
++        return 1;
++    return xbox_ContiguousFreeNow(addr);
++}
++
++int xbox_ContiguousFreeNow(uint32_t addr)
+ {
+     int i, found = 0;
+ 

@@ -1,0 +1,36 @@
+Subject: Keep the game thread's handle; register guest threads with the watchdog
+
+The host waits on the first guest system thread. The runtime overwrote that record with every
+later worker and stored a handle the game closes at once; a duplicated host handle is kept
+instead. Each new guest thread's register block is registered for the stall watchdog's thread
+dumps (src/fci_threads.c).
+
+---
+diff --git a/src/kernel/kernel_bridge.c b/src/kernel/kernel_bridge.c
+--- a/src/kernel/kernel_bridge.c
++++ b/src/kernel/kernel_bridge.c
+@@ -499,6 +499,10 @@
+                             " it shares the main thread's\n");
+     }
+     free(s);
++    {
++        extern void fci_register_guest_thread(uint32_t routine, uint32_t context);
++        fci_register_guest_thread(ctx1, ctx2);
++    }
+ 
+     guest_cpu_join();
+     bridge_run_thread_inline(fn, ctx1, ctx2);
+@@ -527,7 +531,12 @@
+     /* Record the game thread so a host-tick-driven title's watchdog can sample
+      * it via xbox_thread_debug_handle. Harmless for default-model titles: they
+      * spawn workers too, but never read it back. See kernel_thread.c. */
+-    else xbox_set_game_thread(th);
++    else if (!xbox_thread_debug_handle()) { /* host-owned duplicate */
++        HANDLE own = NULL;
++        if (DuplicateHandle(GetCurrentProcess(), th, GetCurrentProcess(), &own, 0, FALSE,
++                            DUPLICATE_SAME_ACCESS))
++            xbox_set_game_thread(own);
++    }
+     return th;
+ }
+ 

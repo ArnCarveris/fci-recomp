@@ -1,0 +1,63 @@
+Subject: KeWaitForMultipleObjects: wait on objects, not handles
+
+KeWaitForMultipleObjects takes dispatcher-object pointers, but they were passed to the host as
+handles, so every wait failed at once and XNet's receive thread (0026DDE0) spun about 150,000
+times a second, starving the game. Each object is resolved as KeWaitForSingleObject does; a
+satisfied synchronization event is reset in guest memory.
+
+---
+diff --git a/src/kernel/kernel_bridge.c b/src/kernel/kernel_bridge.c
+--- a/src/kernel/kernel_bridge.c
++++ b/src/kernel/kernel_bridge.c
+@@ -4554,15 +4554,42 @@
+     }
+     if (count > BRIDGE_MAXIMUM_WAIT_OBJECTS)
+         count = BRIDGE_MAXIMUM_WAIT_OBJECTS;
+-    for (i = 0; i < count; i++)
+-        handles[i] = bridge_resolve_handle(
+-            objects_va ? BRIDGE_MEM32(objects_va + i * 4) : 0);
+-
+-    g_eax = (uint32_t)xbox_KeWaitForMultipleObjects(
+-        count, (PVOID *)handles, wait_type,
+-        STACK_ARG(3), (KPROCESSOR_MODE)STACK_ARG(4),
+-        (BOOLEAN)alertable, XBOX_TO_NATIVE(timeout_va),
+-        XBOX_TO_NATIVE(STACK_ARG(7)));
++    {   /* objects, not handles */
++        extern void fci_unmodeled_object(const char *service, uint32_t object);
++        int types[BRIDGE_MAXIMUM_WAIT_OBJECTS];
++        uint32_t objs[BRIDGE_MAXIMUM_WAIT_OBJECTS];
++        for (i = 0; i < count; i++) {
++            uint32_t object = objects_va ? BRIDGE_MEM32(objects_va + i * 4) : 0;
++            HANDLE ge = object ? ke_guest_event(object, &types[i]) : NULL;
++            objs[i] = object;
++            if (ge) {
++                if (BRIDGE_MEM32(object + 4) == 0) {
++                    ResetEvent(ge);
++                    if (BRIDGE_MEM32(object + 4) != 0)
++                        SetEvent(ge);
++                } else {
++                    SetEvent(ge);
++                }
++                handles[i] = ge;
++                continue;
++            }
++            types[i] = -1;
++            handles[i] = object ? ke_shadow_lookup(object) : NULL;
++            if (!handles[i])
++                handles[i] = bridge_resolve_handle(object);
++            if (!handles[i])
++                fci_unmodeled_object("KeWaitForMultipleObjects", object);
++        }
++        g_eax = (uint32_t)xbox_KeWaitForMultipleObjects(
++            count, (PVOID *)handles, wait_type,
++            STACK_ARG(3), (KPROCESSOR_MODE)STACK_ARG(4),
++            (BOOLEAN)alertable, XBOX_TO_NATIVE(timeout_va),
++            XBOX_TO_NATIVE(STACK_ARG(7)));
++        if (g_eax < count)            /* WaitAny: object g_eax; WaitAll: all */
++            for (i = 0; i < count; i++)
++                if (types[i] == 1 && (wait_type == 0 || i == g_eax))
++                    BRIDGE_MEM32(objs[i] + 4) = 0;
++    }
+ }
+ 
+ #undef BRIDGE_MAXIMUM_WAIT_OBJECTS

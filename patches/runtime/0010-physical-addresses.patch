@@ -1,0 +1,54 @@
+Subject: Physical addresses: tag main RAM so device models resolve it
+
+Physical address P could mean contiguous-window offset P or main-RAM address P, and the USB and
+APU models guessed wrong (XPP's enumeration stalled). MmGetPhysicalAddress now tags main-RAM
+addresses outside the window with 0x08000000, which no retail address has, and the OHCI and APU
+bus models resolve the tag.
+
+Its changes to src/apu/apu_core.c, from xemu, are licensed LGPL-2.1-or-later (patches/README.md).
+
+---
+diff --git a/src/apu/apu_core.c b/src/apu/apu_core.c
+--- a/src/apu/apu_core.c
++++ b/src/apu/apu_core.c
+@@ -76,8 +76,8 @@
+ uint8_t *mcpx_apu_phys(uint64_t addr)
+ {
+     uint32_t a = (uint32_t)addr & 0x0FFFFFFFu;
+-    if (a >= g_xbox_image_lo && a < g_xbox_image_hi)
+-        return g_apu_ram_ptr + a;
++    if ((a & 0x0C000000u) == 0x08000000u)       /* main RAM, tagged by MmGetPhysicalAddress */
++        return g_apu_ram_ptr + (a & 0x03FFFFFFu);
+     if (a < xbox_ContiguousAllocatedBytes())
+         return g_apu_ram_ptr + 0x80000000u + a;
+     return g_apu_ram_ptr + (a & 0x03FFFFFFu);
+diff --git a/src/kernel/kernel_memory.c b/src/kernel/kernel_memory.c
+--- a/src/kernel/kernel_memory.c
++++ b/src/kernel/kernel_memory.c
+@@ -179,9 +179,9 @@
+      * nothing naming this function.
+      */
+     uint32_t va = (uint32_t)(uintptr_t)BaseAddress;
+-    return (ULONG_PTR)((va >= XBOX_CONTIG_BASE &&
+-                        (uint64_t)va < (uint64_t)XBOX_CONTIG_BASE + XBOX_CONTIG_SIZE)
+-                     ? va - XBOX_CONTIG_BASE : va);
++    if (va >= XBOX_CONTIG_BASE && (uint64_t)va < (uint64_t)XBOX_CONTIG_BASE + XBOX_CONTIG_SIZE)
++        return (ULONG_PTR)(va - XBOX_CONTIG_BASE);
++    return (ULONG_PTR)(va < 0x04000000u ? (va | 0x08000000u) : va);
+ }
+ 
+ VOID __stdcall xbox_MmPersistContiguousMemory(PVOID BaseAddress, ULONG NumberOfBytes, BOOLEAN Persist)
+diff --git a/src/usb/ohci.c b/src/usb/ohci.c
+--- a/src/usb/ohci.c
++++ b/src/usb/ohci.c
+@@ -498,8 +498,8 @@
+  * again, forever. */
+ static uint32_t bus_resolve(uint32_t addr)
+ {
+-    if (addr >= g_xbox_image_lo && addr < g_xbox_image_hi)
+-        return addr;
++    if ((addr & 0xFC000000u) == 0x08000000u)   /* main RAM, tagged by MmGetPhysicalAddress */
++        return addr & 0x03FFFFFFu;
+     if (addr && addr < xbox_ContiguousAllocatedBytes())
+         return OHCI_CONTIG_BASE + addr;
+     return addr;

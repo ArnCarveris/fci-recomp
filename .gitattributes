@@ -1,0 +1,15 @@
+* text=auto eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.ini text eol=lf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.py text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.cpp text eol=lf
+# byte for byte: every line must match the toolkit's
+*.patch -text diff
+.gitattributes text eol=lf

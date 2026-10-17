@@ -1,0 +1,30 @@
+Subject: x87: fld and fstp with 80-bit memory operands
+
+fld xword was read as a 32-bit float and fstp xword stored nothing. The CRT's exp compares with an
+extended constant (00630236) and took its overflow path, corrupting the stack: the map editor's
+terrain tool did nothing. Both go through fci_ld80/fci_st80 (src/fci_cpu.c) at double precision.
+
+---
+diff --git a/tools/recomp/lifter.py b/tools/recomp/lifter.py
+--- a/tools/recomp/lifter.py
++++ b/tools/recomp/lifter.py
+@@ -3494,6 +3494,9 @@
+                         return [f"fp_push(MEMF({_fmt_mem(ops[0])})); /* fld float */"]
+                     elif ops[0].mem_size == 8:
+                         return [f"fp_push(MEMD({_fmt_mem(ops[0])})); /* fld double */"]
++                    elif ops[0].mem_size == 10:
++                        return [f"{{ extern double fci_ld80(uint32_t); "
++                                f"fp_push(fci_ld80({_fmt_mem(ops[0])})); }} /* fld xword */"]
+                     return [f"fp_push(MEMF({_fmt_mem(ops[0])})); /* fld */"]
+                 if ops[0].type == "reg":
+                     # fld st(i) pushes a COPY of st(i). Was a no-op comment,
+@@ -3521,6 +3524,9 @@
+                     return [f"MEMF({_fmt_mem(ops[0])}) = (float)fp_top();{do_pop} /* {m} */"]
+                 elif ops[0].mem_size == 8:
+                     return [f"MEMD({_fmt_mem(ops[0])}) = fp_top();{do_pop} /* {m} */"]
++                elif ops[0].mem_size == 10:
++                    return [f"{{ extern void fci_st80(uint32_t, double); "
++                            f"fci_st80({_fmt_mem(ops[0])}, fp_top()); }}{do_pop} /* {m} xword */"]
+             # fst/fstp st(i): copy st0 to st(i); fstp then pops. This used to be
+             # a bare comment -- a no-op -- which LEAKS the FPU stack. `fstp st(0)`
+             # is the common idiom for "pop the value fptan/fsincos just pushed";

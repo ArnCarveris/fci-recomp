@@ -1,0 +1,19 @@
+Subject: movsx from bp and sp sign-extends
+
+movsx from the 16-bit registers bp and sp was emitted as a zero extension. Bink's integer IDCT
+(005B45B0) loads a coefficient into bp and sign-extends it later, so negative coefficients
+corrupted the intro movie and the title background.
+
+---
+diff --git a/tools/recomp/lifter.py b/tools/recomp/lifter.py
+--- a/tools/recomp/lifter.py
++++ b/tools/recomp/lifter.py
+@@ -1825,7 +1825,7 @@
+             r = ops[1].reg
+             if r in ("al", "bl", "cl", "dl", "ah", "bh", "ch", "dh"):
+                 src = f"SX8({src})"
+-            elif r in ("ax", "bx", "cx", "dx", "si", "di"):
++            elif r in ("ax", "bx", "cx", "dx", "si", "di", "bp", "sp"):
+                 src = f"SX16({src})"
+         return [_fmt_operand_write(ops[0], src)]
+ 

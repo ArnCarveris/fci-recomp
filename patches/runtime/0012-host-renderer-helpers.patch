@@ -1,0 +1,60 @@
+Subject: Helpers for the host renderer and DirectSound
+
+Exported for src/xbr: set or reset a guest event (title-built KEVENTs, shadows and handles alike),
+NtSetEvent on a guest handle, and a worker stack and TIB for a host thread that calls guest code.
+
+---
+diff --git a/src/kernel/kernel_bridge.c b/src/kernel/kernel_bridge.c
+--- a/src/kernel/kernel_bridge.c
++++ b/src/kernel/kernel_bridge.c
+@@ -1655,6 +1655,16 @@
+  * one that always fails, because it looks like the game is running.
+  */
+ static HANDLE bridge_resolve_handle(uint32_t token);
++
++/* NtSetEvent on a guest event handle, for host code (src/xbr) */
++int fci_guest_set_event_handle(uint32_t token)
++{
++    HANDLE handle = bridge_resolve_handle(token);
++    if (!handle)
++        return 0;
++    xbox_NtSetEvent(handle, NULL);
++    return 1;
++}
+ 
+ static void bridge_NtWaitForSingleObjectEx(void)
+ {
+@@ -7215,6 +7225,33 @@
+     g_eax = 0;
+ }
+ 
++/* Guest events and guest-capable host threads, for the host renderer (src/xbr) */
++void fci_guest_event(uint32_t guest_va, int set)
++{
++    uint32_t eax = g_eax;
++    g_esp -= 12;
++    BRIDGE_MEM32(g_esp) = guest_va;
++    BRIDGE_MEM32(g_esp + 4) = 0;
++    BRIDGE_MEM32(g_esp + 8) = 0;
++    if (set)
++        bridge_KeSetEvent();
++    else
++        bridge_KeResetEvent();
++    g_esp += 12;
++    g_eax = eax;
++}
++
++int fci_guest_host_thread_init(void)
++{
++    int slot = xbox_worker_stack_alloc();
++    uint32_t tib;
++    if (slot < 0 || !(tib = xbox_AllocThreadTib()))
++        return 0;
++    g_esp = XBOX_WORKER_STACK_TOP(slot);
++    g_fs_base = tib;
++    return 1;
++}
++
+ /* --- KeResumeThread (ordinal 140, 1 arg = 4 bytes) --- */
+ static void bridge_KeResumeThread(void)
+ {

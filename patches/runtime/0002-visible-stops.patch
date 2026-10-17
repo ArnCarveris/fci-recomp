@@ -1,0 +1,98 @@
+Subject: Stop visibly on unsupported kernel paths instead of faking success
+
+An unbridged kernel ordinal, a thread whose start routine is not in the dispatch table, running
+out of thread stacks, a wait on a dispatcher object the runtime does not model, HalReturnToFirmware
+and KeBugCheck(Ex) now stop the process with a distinct exit code and a log line
+(src/fci_manual.c) instead of returning success or exiting 0. A bug check never returns: the game
+used to run on past its own fatal error and crash later somewhere unrelated.
+
+---
+diff --git a/src/kernel/kernel_bridge.c b/src/kernel/kernel_bridge.c
+--- a/src/kernel/kernel_bridge.c
++++ b/src/kernel/kernel_bridge.c
+@@ -626,11 +626,8 @@
+                 stack_top = xbox_AllocThreadStack();
+ 
+                 if (!stack_top) {
+-                    fprintf(stderr, "  [KERNEL] PsCreateSystemThreadEx: out of "
+-                            "thread stacks, running worker 0x%08X inline\n",
+-                            start_routine);
+-                    fflush(stderr);
+-                    bridge_run_thread_inline(fn, start_context1, start_context2);
++                    extern void fci_thread_stop(const char *why, uint32_t routine);
++                    fci_thread_stop("PsCreateSystemThreadEx out of thread stacks", start_routine);
+                 } else {
+                     HANDLE th = bridge_spawn_thread(fn, start_context1,
+                                                     start_context2, stack_top);
+@@ -644,8 +641,8 @@
+                 }
+             }
+         } else {
+-            fprintf(stderr, "  [KERNEL] PsCreateSystemThreadEx: start routine 0x%08X not found in dispatch!\n",
+-                    start_routine);
++            extern void fci_thread_stop(const char *why, uint32_t routine);
++            fci_thread_stop("PsCreateSystemThreadEx start routine not in dispatch", start_routine);
+         }
+     }
+ 
+@@ -1580,8 +1577,10 @@
+     h = ke_shadow_lookup(object);
+     if (!h)
+         h = bridge_resolve_handle(object);
+-    if (!h)
+-        h = XBOX_TO_NATIVE(object);
++    if (!h) {
++        extern void fci_unmodeled_object(const char *service, uint32_t object);
++        fci_unmodeled_object("KeWaitForSingleObject", object);
++    }
+ 
+     g_eax = (uint32_t)xbox_KeWaitForSingleObject(
+         h, wait_reason, wait_mode,
+@@ -1824,10 +1823,8 @@
+  */
+ static void bridge_KeBugCheck(void)
+ {
+-    fprintf(stderr, "  [KERNEL] *** KeBugCheck: code=0x%08X ***\n",
+-            STACK_ARG(0));
+-    fflush(stderr);
+-    g_eax = 0;
++    extern void fci_bugcheck(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
++    fci_bugcheck(STACK_ARG(0), g_xbox_kernel_caller, 0, 0, 0, 0);
+ }
+ 
+ static void bridge_KeBugCheckEx(void)
+@@ -1836,8 +1833,10 @@
+             "(0x%08X, 0x%08X, 0x%08X, 0x%08X) ***\n",
+             STACK_ARG(0), STACK_ARG(1), STACK_ARG(2),
+             STACK_ARG(3), STACK_ARG(4));
+-    fflush(stderr);
+-    g_eax = 0;
++    {   extern void fci_bugcheck(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
++        fci_bugcheck(STACK_ARG(0), g_xbox_kernel_caller, STACK_ARG(1), STACK_ARG(2),
++                     STACK_ARG(3), STACK_ARG(4));
++    }
+ }
+ 
+ /* ── NtYieldExecution (ordinal 238) ──────────────────────── */
+@@ -9558,6 +9557,8 @@
+          * gating on g_kernel_call_count: a missing bridge is rare and is
+          * usually the reason a game misbehaves, so it must not be swallowed
+          * by the general call-trace throttle. Bounded to one line per slot. */
++        extern void fci_unbridged_ordinal(unsigned ordinal, int slot);
++        fci_unbridged_ordinal((unsigned)ordinal, slot);
+         static uint8_t warned[XBOX_KERNEL_THUNK_TABLE_SIZE];
+         if (!warned[slot]) {
+             warned[slot] = 1;
+diff --git a/src/kernel/kernel_hal.c b/src/kernel/kernel_hal.c
+--- a/src/kernel/kernel_hal.c
++++ b/src/kernel/kernel_hal.c
+@@ -523,7 +523,8 @@
+     /* stderr too: the kernel log file is rewritten on every run, so a title
+      * that ends itself otherwise leaves no trace in the run's own log. */
+     fprintf(stderr, "[EXIT] HalReturnToFirmware routine=%u\n", (unsigned)Routine);
+-    ExitProcess(0);
++    { extern void fci_host_chain(const char *label); fci_host_chain("  host chain"); }
++    ExitProcess(8900u + (unsigned)Routine);
+ }
+ 
+ VOID __stdcall xbox_HalInitiateShutdown(void)

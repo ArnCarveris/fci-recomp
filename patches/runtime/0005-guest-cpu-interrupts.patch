@@ -1,0 +1,306 @@
+Subject: Interrupt-level code and IRQL under the guest CPU lock; preemption at loop edges
+
+ISRs, DPCs and KeSynchronizeExecution routines ran on host threads beside the guest thread they
+should preempt; DirectSound's voice-list relink (00582EE1) then faulted on a half-linked list.
+They now take the guest CPU (waiting at most 5 ms), and DPCs wait while any thread is at or above
+DISPATCH_LEVEL. A thread blocked in a wait no longer masks DPCs, and a raised thread keeps the
+guest CPU across non-waiting kernel calls. A thread waiting for the guest CPU raises a yield
+request that the holder honours at its next loop edge (src/fci_threads.c, tools/compile.py).
+Host waits from the renderer give up the guest CPU as kernel waits do.
+
+Its changes to src/apu/apu_core.c, from xemu, are licensed LGPL-2.1-or-later (patches/README.md).
+
+---
+diff --git a/src/apu/apu_core.c b/src/apu/apu_core.c
+--- a/src/apu/apu_core.c
++++ b/src/apu/apu_core.c
+@@ -171,7 +171,10 @@
+     g_esp -= 4; *(uint32_t *)(g_apu_ram_ptr + g_esp) = context;
+     g_esp -= 4; *(uint32_t *)(g_apu_ram_ptr + g_esp) = kint;
+     g_esp -= 4; *(uint32_t *)(g_apu_ram_ptr + g_esp) = 0xDEADBEEFu;
+-    { int _irql = xbox_IrqlEnterInterrupt(16); fn(); xbox_IrqlLeaveInterrupt(_irql); }
++    { extern int guest_cpu_interrupt_enter(void); extern void guest_cpu_interrupt_leave(int);
++      int _cpu = guest_cpu_interrupt_enter();
++      int _irql = xbox_IrqlEnterInterrupt(16); fn(); xbox_IrqlLeaveInterrupt(_irql);
++      guest_cpu_interrupt_leave(_cpu); }
+     xbox_worker_stack_free(slot);
+     qemu_mutex_lock(&d->lock);
+ 
+diff --git a/src/kernel/kernel_bridge.c b/src/kernel/kernel_bridge.c
+--- a/src/kernel/kernel_bridge.c
++++ b/src/kernel/kernel_bridge.c
+@@ -2041,7 +2041,10 @@
+     g_esp -= 4; BRIDGE_MEM32(g_esp) = context;
+     g_esp -= 4; BRIDGE_MEM32(g_esp) = dpc_va;
+     g_esp -= 4; BRIDGE_MEM32(g_esp) = 0;
+-    { int _irql = xbox_IrqlEnterInterrupt(2); fn(); xbox_IrqlLeaveInterrupt(_irql); }
++    { extern int guest_cpu_interrupt_enter(void); extern void guest_cpu_interrupt_leave(int);
++      int _cpu = guest_cpu_interrupt_enter();
++      int _irql = xbox_IrqlEnterInterrupt(2); fn(); xbox_IrqlLeaveInterrupt(_irql);
++      guest_cpu_interrupt_leave(_cpu); }
+     return 1;
+ }
+ 
+@@ -2081,7 +2084,10 @@
+      * the dummy return address and the argument, so g_esp needs no fixup. */
+     g_esp -= 4; BRIDGE_MEM32(g_esp) = context;
+     g_esp -= 4; BRIDGE_MEM32(g_esp) = 0;
+-    fn();
++    { extern int guest_cpu_interrupt_enter(void); extern void guest_cpu_interrupt_leave(int);
++      int _cpu = guest_cpu_interrupt_enter();
++      fn();
++      guest_cpu_interrupt_leave(_cpu); }
+     /* g_eax is whatever the routine returned, which is this call's result. */
+ }
+ 
+@@ -2229,7 +2235,10 @@
+     g_esp -= 4; BRIDGE_MEM32(g_esp) = context;
+     g_esp -= 4; BRIDGE_MEM32(g_esp) = kint;
+     g_esp -= 4; BRIDGE_MEM32(g_esp) = 0;
+-    { int _irql = xbox_IrqlEnterInterrupt(16); fn(); xbox_IrqlLeaveInterrupt(_irql); }
++    { extern int guest_cpu_interrupt_enter(void); extern void guest_cpu_interrupt_leave(int);
++      int _cpu = guest_cpu_interrupt_enter();
++      int _irql = xbox_IrqlEnterInterrupt(16); fn(); xbox_IrqlLeaveInterrupt(_irql);
++      guest_cpu_interrupt_leave(_cpu); }
+     return (int)(g_eax & 1u);
+ }
+ 
+@@ -2315,8 +2324,11 @@
+         if (d.dpc)
+             BRIDGE_MEM8(d.dpc + 2) = 0;
+         LeaveCriticalSection(&g_dpc_lock);
+-        if (d.dpc)
++        if (d.dpc) {
++            extern void guest_dpc_gate(void);
++            guest_dpc_gate();
+             kernel_run_dpc(d.dpc, d.arg1, d.arg2);
++        }
+     }
+ }
+ 
+@@ -2605,8 +2617,11 @@
+             LeaveCriticalSection(&g_timer_lock);
+ 
+             /* Outside the lock: the routine can set or cancel timers. */
+-            if (dpc)
++            if (dpc) {
++                extern void guest_dpc_gate(void);
++                guest_dpc_gate();
+                 kernel_run_dpc(dpc, 0, 0);
++            }
+ 
+             /* Wake anyone parked on the timer's shadow event; a timer with no
+              * DPC is just a kernel sleep. */
+@@ -9422,7 +9437,11 @@
+ {
+     t_guest_thread = 1;
+     if (guest_cpu_enabled() && !t_guest_held) {
+-        EnterCriticalSection(&g_guest_cpu);
++        extern volatile long g_fci_yield;
++        if (!TryEnterCriticalSection(&g_guest_cpu)) {
++            g_fci_yield = 1;
++            EnterCriticalSection(&g_guest_cpu);
++        }
+         t_guest_held = 1;
+     }
+ }
+@@ -9436,23 +9455,146 @@
+     t_guest_thread = 0;
+ }
+ 
++/* Preemption: a thread waiting for the guest CPU sets g_fci_yield, and the holder yields at
++ * its next loop edge in generated code, unless it is in a kernel call or at raised IRQL. */
++volatile long g_fci_yield;
++
++void guest_cpu_yield(void)
++{
++    extern int xbox_IrqlCurrentRaised(void);
++    if (!t_guest_held || t_dispatch_depth != 0 || xbox_IrqlCurrentRaised())
++        return;
++    g_fci_yield = 0;
++    t_guest_held = 0;
++    LeaveCriticalSection(&g_guest_cpu);
++    SwitchToThread();
++    EnterCriticalSection(&g_guest_cpu);
++    t_guest_held = 1;
++}
++
++/* A host wait on a guest thread (src/xbr) gives up the guest CPU as a kernel wait does,
++ * except in a kernel call or at raised IRQL. Returns whether it let go. */
++int fci_guest_cpu_release(void)
++{
++    extern int xbox_IrqlCurrentRaised(void);
++    if (!t_guest_held || t_dispatch_depth != 0 || xbox_IrqlCurrentRaised())
++        return 0;
++    t_guest_held = 0;
++    LeaveCriticalSection(&g_guest_cpu);
++    return 1;
++}
++
++void fci_guest_cpu_reacquire(int released)
++{
++    if (!released)
++        return;
++    if (!TryEnterCriticalSection(&g_guest_cpu)) {
++        g_fci_yield = 1;
++        EnterCriticalSection(&g_guest_cpu);
++    }
++    t_guest_held = 1;
++}
++
++/* Interrupt-level guest code takes the guest CPU, so it preempts guest threads instead of
++ * running beside them. Waits at most 5 ms. */
++int guest_cpu_interrupt_enter(void)
++{
++    static volatile LONG fallbacks;
++    LARGE_INTEGER start, now, freq;
++    if (!guest_cpu_enabled())
++        return 0;
++    QueryPerformanceFrequency(&freq);
++    QueryPerformanceCounter(&start);
++    while (!TryEnterCriticalSection(&g_guest_cpu)) {
++        g_fci_yield = 1;               /* preempt the holder at a loop edge */
++        QueryPerformanceCounter(&now);
++        if ((now.QuadPart - start.QuadPart) * 200 >= freq.QuadPart) {
++            LONG n = InterlockedIncrement(&fallbacks);
++            if (n == 1 || n % 1000 == 0)
++                fprintf(stderr, "  [FCI] interrupt-level guest code ran beside a "
++                        "guest thread (%ld times; it held the guest CPU over "
++                        "5ms without a kernel call)\n", (long)n);
++            return 0;
++        }
++        SwitchToThread();
++    }
++    return 1;
++}
++
++void guest_cpu_interrupt_leave(int held)
++{
++    if (held)
++        LeaveCriticalSection(&g_guest_cpu);
++}
++
++/* A DPC never runs while a thread is at or above DISPATCH_LEVEL. Called on the timer thread
++ * only; waits at most 1 s. */
++void guest_dpc_gate(void)
++{
++    extern int xbox_IrqlBlocksInterrupts(void);
++    static volatile LONG late;
++    ULONGLONG start = GetTickCount64();
++    while (xbox_IrqlBlocksInterrupts()) {
++        if (GetTickCount64() - start >= 1000) {
++            if (InterlockedIncrement(&late) <= 5) {
++                extern void xbox_IrqlDumpHolders(void);
++                fprintf(stderr, "  [FCI] DPC ran after 1s with a thread still at "
++                        "DISPATCH_LEVEL or above\n");
++                xbox_IrqlDumpHolders();
++            }
++            return;
++        }
++        SwitchToThread();
++    }
++}
++
+ /* A guest thread lets go of the guest CPU for the length of every kernel
+  * call. */
+ static void kernel_thunk_dispatch(void)
+ {
+-    int held = t_guest_held;
+-    if (held) {                        /* let other guest threads run meanwhile */
++    int held = t_guest_held, keep = 0;
++    {
++        extern int xbox_IrqlCurrentRaised(void);
++        int slot = g_kernel_dispatch_slot;
++        if (slot >= 0 && slot < XBOX_KERNEL_THUNK_TABLE_SIZE)
++            switch (g_slot_ordinals[slot]) {
++            case 99: case 158: case 159: case 233: case 234: case 235: case 238:
++                break;                 /* waits give up the CPU */
++            case 103: case 129: case 130: case 160: case 161:
++                keep = 1;
++                break;
++            default:
++                keep = xbox_IrqlCurrentRaised();
++            }
++    }
++    if (held && !keep) {                        /* let other guest threads run meanwhile */
+         t_guest_held = 0;
+         LeaveCriticalSection(&g_guest_cpu);
+     }
+     t_dispatch_depth++;
+-    kernel_thunk_dispatch_body();
++    {
++        extern int xbox_IrqlSuspendForWait(void);
++        extern void xbox_IrqlResumeAfterWait(int suspended);
++        int slot = g_kernel_dispatch_slot, waits = 0, suspended = 0;
++        if (slot >= 0 && slot < XBOX_KERNEL_THUNK_TABLE_SIZE)
++            switch (g_slot_ordinals[slot]) {
++            case 99: case 158: case 159: case 233: case 234: case 235: case 238:
++                waits = 1;
++            }
++        if (waits)
++            suspended = xbox_IrqlSuspendForWait();
++        kernel_thunk_dispatch_body();
++        xbox_IrqlResumeAfterWait(suspended);
++    }
+     t_dispatch_depth--;
+     /* Back to guest code: take the CPU again. Only at the outermost call --
+      * a guest callback a bridge runs (an APC) returns into the bridge, not to
+      * the thread's own code -- and only if the thread still exists as one. */
+-    if (t_guest_thread && t_dispatch_depth == 0 && guest_cpu_enabled()) {
+-        EnterCriticalSection(&g_guest_cpu);
++    if (t_guest_thread && t_dispatch_depth == 0 && guest_cpu_enabled() && !t_guest_held) {
++        if (!TryEnterCriticalSection(&g_guest_cpu)) {
++            g_fci_yield = 1;
++            EnterCriticalSection(&g_guest_cpu);
++        }
+         t_guest_held = 1;
+     }
+     (void)held;
+diff --git a/src/kernel/kernel_hal.c b/src/kernel/kernel_hal.c
+--- a/src/kernel/kernel_hal.c
++++ b/src/kernel/kernel_hal.c
+@@ -148,6 +148,29 @@
+     for (i = 0; i < IRQL_HOLDERS; i++)
+         if (InterlockedCompareExchange(&s_holders[i].tid, 0, me) == me)
+             return;
++}
++
++/* A raised thread blocked in a wait masks nothing. */
++int xbox_IrqlSuspendForWait(void)
++{
++    if (g_current_irql < DISPATCH_LEVEL)
++        return 0;
++    irql_holder_drop();
++    InterlockedDecrement(&g_irql_raised_count);
++    return 1;
++}
++
++void xbox_IrqlResumeAfterWait(int suspended)
++{
++    if (!suspended)
++        return;
++    InterlockedIncrement(&g_irql_raised_count);
++    irql_holder_add(NULL);
++}
++
++int xbox_IrqlCurrentRaised(void)
++{
++    return g_current_irql >= DISPATCH_LEVEL;
+ }
+ 
+ void xbox_IrqlDumpHolders(void)
+diff --git a/src/usb/ohci.c b/src/usb/ohci.c
+--- a/src/usb/ohci.c
++++ b/src/usb/ohci.c
+@@ -896,7 +896,10 @@
+     g_esp -= 4; *(uint32_t *)(mem + g_esp) = kinterrupt;   /* arg 1 */
+     g_esp -= 4; *(uint32_t *)(mem + g_esp) = 0xDEADBEEFu;  /* return address */
+ 
+-    { int _irql = xbox_IrqlEnterInterrupt(16); fn(); xbox_IrqlLeaveInterrupt(_irql); }
++    { extern int guest_cpu_interrupt_enter(void); extern void guest_cpu_interrupt_leave(int);
++      int _cpu = guest_cpu_interrupt_enter();
++      int _irql = xbox_IrqlEnterInterrupt(16); fn(); xbox_IrqlLeaveInterrupt(_irql);
++      guest_cpu_interrupt_leave(_cpu); }
+ 
+     xbox_worker_stack_free(slot);
+     return (int)(g_eax & 1u);

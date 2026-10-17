@@ -1,0 +1,44 @@
+Subject: NV2A: register model and a 1 ms vertical blank clock
+
+The heuristic NV2A acknowledgement thread is replaced by the register model and pusher in
+src/fci_nv2a.c. Its interrupt line (vblank, PGRAPH traps) reaches the guest ISR on vector 3 from
+the timer thread, which now runs every millisecond so the 60 Hz vblank is delivered on time.
+
+---
+diff --git a/src/kernel/kernel_bridge.c b/src/kernel/kernel_bridge.c
+--- a/src/kernel/kernel_bridge.c
++++ b/src/kernel/kernel_bridge.c
+@@ -2262,6 +2262,11 @@
+ static void kernel_vblank_tick(void)
+ {
+     static int enabled = -1;
++    {
++        extern int fci_nv2a_tick(void);
++        if (fci_nv2a_tick())
++            kernel_raise_interrupt(3u);
++    }
+     static long long next_ms;
+     long long now;
+ 
+@@ -2578,7 +2583,7 @@
+         long long now;
+         int i;
+ 
+-        Sleep(10);
++        Sleep(1);
+         kernel_vblank_tick();  /* the GPU's frame clock */
+         kernel_drain_dpcs();   /* deferred work, before due timers */
+         now = (long long)GetTickCount64();
+diff --git a/src/kernel/xbox_memory_layout.c b/src/kernel/xbox_memory_layout.c
+--- a/src/kernel/xbox_memory_layout.c
++++ b/src/kernel/xbox_memory_layout.c
+@@ -2474,7 +2474,8 @@
+     }
+ 
+     if (g_nv2a_memory) {
+-        xbox_Nv2aAckStart();
++        extern void fci_nv2a_start(void *aperture);
++        fci_nv2a_start(g_nv2a_memory);
+     }
+ 
+     /*

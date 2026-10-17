@@ -1,0 +1,20 @@
+Subject: EEPROM video flags in their stored layout
+
+XC_VIDEO answered the values XGetVideoFlags returns, not the stored layout it decodes
+(004F8019), so the game saw no widescreen, progressive or 60 Hz setting. The value now comes from
+fci_video_flags (src/fci_display.c).
+
+---
+diff --git a/src/kernel/kernel_xbox.c b/src/kernel/kernel_xbox.c
+--- a/src/kernel/kernel_xbox.c
++++ b/src/kernel/kernel_xbox.c
+@@ -147,7 +147,8 @@
+     case XC_VIDEO:
+         /* NTSC with widescreen and HDTV support enabled */
+         if (ValueLength >= sizeof(ULONG)) {
+-            *(PULONG)Value = XC_VIDEO_FLAGS_WIDESCREEN | XC_VIDEO_FLAGS_HDTV;
++            extern uint32_t fci_video_flags(void);   /* src/fci_display.c */
++            *(PULONG)Value = fci_video_flags();
+             if (Type) *Type = 4; /* REG_DWORD */
+             if (ResultLength) *ResultLength = sizeof(ULONG);
+         }

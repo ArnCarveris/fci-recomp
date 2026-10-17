@@ -1,0 +1,90 @@
+Subject: Recover missing direct-branch targets inside a function
+
+Branch targets the disassembler did not decode are decoded within 64 KiB of the function and
+lifted as local labels (patches/lifter/fci_direct.py), so flags and loops stay in one C function.
+Recovered streams follow their original fallthrough; anything ambiguous is left unresolved.
+
+---
+diff --git a/tools/recomp/lifter.py b/tools/recomp/lifter.py
+--- a/tools/recomp/lifter.py
++++ b/tools/recomp/lifter.py
+@@ -2495,6 +2495,9 @@
+ 
+     def _is_external_target(self, addr):
+         """Check if a jump target is outside the current function."""
++        local = getattr(self, 'fci_local_addresses', None)
++        if local is not None:
++            return addr not in local
+         return not (self.func_start <= addr < self.func_end)
+ 
+     def _read_jump_table(self, table_va, max_entries=256):
+diff --git a/tools/recomp/translator.py b/tools/recomp/translator.py
+--- a/tools/recomp/translator.py
++++ b/tools/recomp/translator.py
+@@ -2056,7 +2056,8 @@
+                         and block.last_insn.mnemonic == "int3"
+                         and block.last_insn.address not in debug_slide_int3s):
+                     block.successors = []
+-        return instructions, blocks
++        from .fci_direct import recover_direct
++        return recover_direct(self, start, end, instructions, blocks)
+ 
+     def translate_function(self, func_addr, func_info):
+         """
+@@ -2160,7 +2161,7 @@
+                 and not (start <= insn.jump_target < end))
+             for insn in instructions
+         )
+-        if has_tail_jump or fallthrough_target is not None:
++        if has_tail_jump or fallthrough_target is not None or getattr(self, '_fci_direct_extended', False):
+             used_regs.add("ebp")
+ 
+ 
+@@ -2387,6 +2388,9 @@
+ 
+         lines.append(f"")
+ 
++        if blocks[0].start != start:
++            lines.append(f'    goto loc_{start:08X}; /* original entry */')
++
+         # Generate code for each basic block
+         # Create a set of addresses that need labels
+         label_addrs = set()
+@@ -2395,8 +2399,10 @@
+                 label_addrs.add(succ)
+         # Also add any jump targets within the function
+         for insn in instructions:
+-            if insn.jump_target and start <= insn.jump_target < end:
++            if insn.jump_target and not self.lifter._is_external_target(insn.jump_target):
+                 label_addrs.add(insn.jump_target)
++        if getattr(self, '_fci_direct_extended', False):
++            label_addrs.update(bb.start for bb in blocks)
+         label_addrs |= self.lifter.imm_code_refs
+         label_addrs.update(debug_slide_bypasses.values())
+         label_addrs.update(switch_leaders)
+@@ -2427,7 +2433,8 @@
+                 "jmp", "ud2", "hlt", "iret", "iretd")
+                       or (last.mnemonic == "int3"
+                           and last.address not in debug_slide_int3s))
+-            if not leaves and i + 1 < len(blocks):
++            if (not leaves and i + 1 < len(blocks)
++                    and last.end_address == blocks[i + 1].start):
+                 preds[blocks[i + 1].start].add(bb.start)
+ 
+         # Settle the flag state before emitting anything.
+@@ -2531,6 +2538,15 @@
+             last = bb.instructions[-1] if bb.instructions else None
+             block_lines[bb.start] = (first, len(lines),
+                                      bool(last and (last.is_branch or last.is_ret)))
++            if (getattr(self, '_fci_direct_extended', False) and last is not None
++                    and not last.is_terminator
++                    and last.mnemonic not in ('int3', 'ud2', 'hlt', 'iret', 'iretd')):
++                ft = last.end_address
++                if ft in self.lifter.fci_local_addresses:
++                    lines.append(f'    goto loc_{ft:08X}; /* original fallthrough */')
++                elif ft in self.func_db:
++                    fn = self.lifter._call_target_name(ft)
++                    lines.append(f'    g_seh_ebp = ebp; {fn}(); return; /* original fallthrough */')
+             bypass = debug_slide_bypasses.get(bb.last_insn.address)
+             if bypass is not None:
+                 lines.append(

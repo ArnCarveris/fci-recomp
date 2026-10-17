@@ -1,0 +1,33 @@
+{
+ "image": "ige.xbe",
+ "sha256": "8d6f9da1c2d9e588f8e4eaf4ad8a68a0212ca1310adb76616bf31e8f489b1968",
+ "symbols": [
+  {"va": "0x0001D430", "name": "Editor_UpdateTool", "kind": "function", "confidence": "likely",
+   "evidence": "calls the active tool's Update through its vtable (call [edx+8] at 0001D8D6)"},
+  {"va": "0x0002B830", "name": "TerrainTool_Update", "kind": "function", "confidence": "verified",
+   "evidence": "vtable 005B3608 slot 2; moves the terrain cursor and applies the brush on Y/B/A/X; split by bogus seeds it stopped the cursor, fixed by the seed filter (MAP-EDITOR r3)"},
+  {"va": "0x005B3608", "name": "TerrainTool_vtable", "kind": "vtable", "confidence": "verified",
+   "evidence": "the terrain tool object's vtable; slot 2 (+8) is 0002B830"},
+  {"va": "0x0002C170", "name": "TerrainBrush_Bump", "kind": "function", "confidence": "verified",
+   "evidence": "raises heights in the cursor's radius: strength = cvttss2si([00638DF8]+[005B38D8]) >> 3, at least 1, times an exp() falloff; passes each new height to 000CF610; the oracle traced its heights (MAP-EDITOR r3)"},
+  {"va": "0x000CF610", "name": "Terrain_SetHeight", "kind": "function", "confidence": "likely",
+   "evidence": "thiscall (x, z, height) ret 0xC: sets the height in each of up to 4 sector tiles sharing the vertex (0014C570 finds the tile, 0014C8B0 stores it); callers 0002C170..0002CBD0 are the brushes"},
+  {"va": "0x0014C8B0", "name": "TerrainTile_StoreHeight", "kind": "function", "confidence": "likely",
+   "evidence": "word [esi+2] = ftol(height * [005B2380]) & 0x7FFF: heights are 15-bit words in the tile"},
+  {"va": "0x0022FFF0", "name": "JumpInMap_Callback", "kind": "function", "confidence": "likely",
+   "evidence": "callback registered by push 0x22FFF0 at 002302E5; its absence stopped Jump In Map (STOP 81, MAP-EDITOR r2)"},
+  {"va": "0x0006A020", "name": "Console_CreateVariable", "kind": "function", "confidence": "likely",
+   "evidence": "192 callers, as the game's 001FD9E0", "see": "notes/CVARS.md"},
+  {"va": "0x0006A1D0", "name": "Console_RegisterFloat", "kind": "function", "confidence": "likely",
+   "evidence": "thiscall (ecx = [00649788]; name, float* storage, float default, flags, help), result by fstp; 16 callers as the game's 001FDCD0 (e_obj_view_dist_ratio at 00239656, default 48)", "see": "notes/CVARS.md"},
+  {"va": "0x0006A380", "name": "Console_RegisterInt", "kind": "function", "confidence": "likely",
+   "evidence": "as Console_RegisterFloat with int* storage, result in eax; 75 callers as the game's 001FDED0 (e_detail_objects at 00238DFF)", "see": "notes/CVARS.md"},
+  {"va": "0x0017ED60", "name": "Video_Setup", "kind": "function", "confidence": "guess",
+   "evidence": "the only caller of XGetVideoFlags (004A56C3), as the game's 00241880", "see": "notes/DISPLAY.md"},
+  {"va": "0x004A56C3", "name": "XGetVideoFlags", "kind": "function", "confidence": "likely",
+   "evidence": "XAPI: ExQueryNonVolatileSetting(8) >> 16 & 0x5F (004A56D4..004A56E5), as the game's 004F8019", "see": "notes/DISPLAY.md"},
+  {"va": "0x00649788", "name": "g_pConsole", "kind": "global", "confidence": "likely",
+   "evidence": "loaded into ecx before every Console_Register* call", "see": "notes/CVARS.md"}
+ ],
+ "structs": {}
+}

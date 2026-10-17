@@ -1,0 +1,3 @@
+# The lift and the XDK library matching disassemble with capstone; the generated C was checked with this
+# version.
+capstone==5.0.7

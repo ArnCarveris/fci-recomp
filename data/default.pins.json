@@ -1,0 +1,26 @@
+{
+ "image_sha256": "9796c818c350a05e6756bd6f87e7cbe5e028e9b7b30563c674df9ea019fc4ae1",
+ "comment": "Addresses the XDK 5849 signatures cannot find, merged into image_symbols.h by tools/sigmatch.py. Each with its evidence.",
+ "symbols": {
+  "XMemAlloc": {
+   "va": "0x00013150",
+   "evidence": "the title's own XMemAlloc (CryEngine overrides it): D3D surface creation 00510910 calls it as (0x18, 0x64800000) for the header and (size, 0xB6800000) for the data; resource destroy 0050C300 frees both through 000132B0"
+  },
+  "XMemFree": {
+   "va": "0x000132B0",
+   "evidence": "the title's XMemFree: D3D resource destroy 0050C300 calls it as (data | 0x80000000, 0xA1800000) and (header, 0x24800000)"
+  },
+  "D3DDevice_RunPushBuffer": {
+   "va": "0x00510AC0",
+   "evidence": "stdcall (push buffer, fixup): checks the buffer's common sign, copies fixups through 00510A20, then pushes a JUMP (0x20000000 | data) into the hardware's commands and returns through 00510D30; game caller 0024CB80 passes (batch+0x14, 0)"
+  },
+  "D3DDevice_BeginVisibilityTest": {
+   "va": "0x00507230",
+   "evidence": "stdcall (): reserves 12 bytes and pushes 0x000817C8 (two methods from NV097_CLEAR_REPORT_VALUE 0x17C8) = 1 (ZPASS_PIXEL_CNT) and NV097_SET_ZPASS_PIXEL_COUNT_ENABLE 0x17CC = 1; its only caller, the title's occlusion query 00251920, follows it with EndVisibilityTest 005072D0"
+  },
+  "D3DDevice_EndVisibilityTest": {
+   "va": "0x005072D0",
+   "evidence": "stdcall (index), ret 4: 00507260 finds the report slot (device+0x7D4 page table, a 0x1000 page from XMemAlloc(0x1000, 0xA1800000), slot = index % 256 * 16) and sets slot+12 to ~0; pushes 0x000817CC: ZPASS_PIXEL_COUNT_ENABLE 0 and NV097_GET_REPORT 0x17D0 = slot offset | type 1; GetVisibilityTestResult 00506340 returns D3DERR_TESTINCOMPLETE (0x88760828) while slot+12 is ~0, else the count at slot+8"
+  }
+ }
+}

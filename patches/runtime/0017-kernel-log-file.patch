@@ -1,0 +1,21 @@
+Subject: Kernel trace file named by RECOMP_KERNEL_LOG_FILE
+
+The kernel trace went to xbox_kernel.log in the working directory, the game's folder. The host
+names the file per session in the log folder (src/fci_config.c); unset, it stays xbox_kernel.log.
+
+---
+diff --git a/src/kernel/kernel_thunks.c b/src/kernel/kernel_thunks.c
+--- a/src/kernel/kernel_thunks.c
++++ b/src/kernel/kernel_thunks.c
+@@ -403,7 +403,10 @@
+     g_log_cs_init = TRUE;
+ 
+     /* Try to open log file, fall back to stderr */
+-    g_log_file = fopen("xbox_kernel.log", "w");
++    {   /* RECOMP_KERNEL_LOG_FILE: src/fci_config.c */
++        const char *named = getenv("RECOMP_KERNEL_LOG_FILE");
++        g_log_file = named && *named ? fopen(named, "a") : fopen("xbox_kernel.log", "w");
++    }
+ 
+     /* Set log level from environment variable if present */
+     const char* log_env = getenv("XBOX_LOG_LEVEL");

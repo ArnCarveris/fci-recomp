@@ -1,0 +1,33 @@
+# Game files: never in this repository
+*.iso
+*.xiso
+*.xbe
+*.xex
+*.bin
+*.dat
+*.fat
+*.bik
+*.xwb
+/game/
+
+# What the build makes: the toolkit, the compiler, the generated C, the build and the install
+/build/
+/Far Cry Instincts/
+*.obj
+*.pdb
+*.exe
+*.dll
+*.lib
+*.exp
+*.map
+*.ilk
+
+# Local settings and caches
+fci.ini
+!/src/fci.ini
+.vs/
+.vscode/
+__pycache__/
+.venv/
+.pytest_cache/
+.ruff_cache/

@@ -1,0 +1,42 @@
+Subject: Keyboard and mouse: keys from the game window, the bindable PC layout
+
+The keyboard pad read keys only from the runtime's own window; the game window (src/fci_nv2a.c)
+now forwards its key events. The fixed emulator-style keys give way to the bindable layout of
+src/fci_input.c (WASD, mouse look, fci.ini bindings), merged over a real pad on port 0.
+
+---
+diff --git a/src/input/xinput_device.c b/src/input/xinput_device.c
+--- a/src/input/xinput_device.c
++++ b/src/input/xinput_device.c
+@@ -84,10 +84,15 @@
+     return (SHORT)v;
+ }
+ 
++void fci_kbm_state(XBOX_INPUT_STATE *pState);   /* src/fci_input.c */
+ static void keyboard_state(XBOX_INPUT_STATE *pState)
+ {
+     static DWORD packet;
+     WORD b = 0;
++    if (pState) {
++        fci_kbm_state(pState);
++        return;
++    }
+ 
+     memset(pState, 0, sizeof(*pState));
+ 
+diff --git a/src/video/fb_present.c b/src/video/fb_present.c
+--- a/src/video/fb_present.c
++++ b/src/video/fb_present.c
+@@ -131,6 +131,12 @@
+ {
+     InterlockedIncrement(&s_flips);
+     InterlockedExchange(&s_frame_draws, (LONG)draws);
++}
++
++void fci_framebuffer_key(int vk, int down)
++{
++    if ((unsigned)vk < 256)
++        s_key_down[vk] = down ? 1 : 0;
+ }
+ 
+ int xbox_FramebufferKeyDown(int vk)

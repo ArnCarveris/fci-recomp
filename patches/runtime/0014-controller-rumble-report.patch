@@ -1,0 +1,21 @@
+Subject: USB controller: accept the rumble output report
+
+When Story Mode starts, the game sends the controller its rumble report (HID SET_REPORT). The pad
+stalled it, XAPI took the device for broken and XPP followed a garbage pointer (005C42AC). The
+report is accepted; rumble is not passed to the host pad yet.
+
+---
+diff --git a/src/usb/usb_gamepad.c b/src/usb/usb_gamepad.c
+--- a/src/usb/usb_gamepad.c
++++ b/src/usb/usb_gamepad.c
+@@ -210,6 +210,10 @@
+         }
+         return -1;
+     }
++
++    /* HID SET_REPORT (rumble output report): accepted */
++    if ((setup->bmRequestType & 0x60u) == 0x20u && setup->bRequest == 0x09u && !is_in)
++        return 0;
+ 
+     /* Class requests: not ours to guess at. */
+     return -1;
