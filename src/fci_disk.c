@@ -173,8 +173,9 @@ int fci_volume_size(HANDLE h, void *out, uint32_t length, uint32_t cls, uint32_t
     return 1;
 }
 
-/* Skipped movies return from the game's movie player (00220200) as if played: RECOMP_FCI_SKIP_INTROS=1
- * (startup logos and intro), RECOMP_FCI_SKIP_MOVIES=<name>[,...] (re/notes/MOVIES.md) */
+/* Skipped movies return from the game's movie player (00220200; Evolution's 00196D41) as if played:
+ * RECOMP_FCI_SKIP_INTROS=1 (startup logos and intro, and Evolution's attract video, which also plays on every
+ * return to the main menu), RECOMP_FCI_SKIP_MOVIES=<name>[,...] (re/notes/MOVIES.md) */
 static int movie_listed(const char *list, const char *name, size_t len)
 {
     while (list && *list) {
@@ -187,9 +188,23 @@ static int movie_listed(const char *list, const char *name, size_t len)
     return 0;
 }
 
+/* Evolution's other video player (0019674C: PREY.bik and videos named by data), cdecl, the path first:
+ * logged and counted like Movie_Play's (re/notes/MOVIES.md) */
+void fci_prehook_0019674C(void)
+{
+    extern void fci_status_movie(const char *path); /* RECOMP_FCI_STATUS (fci_threads.c) */
+    char path[260];
+    uint32_t arg = MEM32(g_esp + 4), i;
+    for (i = 0; arg && i < sizeof path - 1 && MEM8(arg + i); i++)
+        path[i] = (char)MEM8(arg + i);
+    path[i] = 0;
+    fci_status_movie(path);
+    fprintf(stderr, "  [FCI] video opened: %s\n", path);
+}
+
 int fci_gate_00220200(void)
 {
-    static const char intros[] = "Ubisoft,Crytek,Intro_FCI";
+    static const char intros[] = "Ubisoft,Crytek,Intro_FCI,Attract_Mode";
     static int skip_intros = -1;
     const char *custom = getenv("RECOMP_FCI_SKIP_MOVIES"), *name, *dot;
     char path[260];
@@ -206,6 +221,7 @@ int fci_gate_00220200(void)
         extern void fci_status_movie(const char *path); /* RECOMP_FCI_STATUS (fci_threads.c) */
         fci_status_movie(path);
     }
+    fprintf(stderr, "  [FCI] movie: %s\n", path);
     if (!skip_intros && !custom)
         return 0;
     name = strrchr(path, '\\');

@@ -119,3 +119,32 @@ def test_argument_overflow_fails_without_overwrite(launch_dll):
     assert launch_dll.fci_quote_arg(buf, 4, c.byref(used), b"too long") == 0
     assert buf.raw[4:] == b"EFGH\0"
     assert used.value < 4
+
+
+def test_title_names_reach_the_header():
+    import titles
+
+    profile = json.loads(PROFILE.read_text())
+    evo = titles.TITLES["evolution"]
+    profile.update(title_name=evo.name, game_exe=evo.game_exe, editor_exe=evo.editor_exe, appdata=evo.appdata)
+    header = image_profile.profile_header(profile)
+    assert '#define FCI_TITLE_NAME "Far Cry Instincts Evolution"' in header
+    assert '#define FCI_EDITOR_EXE_NAME "FarCryEvolutionEditor.exe"' in header
+    assert r'#define FCI_APPDATA "fci-recomp\\evolution"' in header  # a C string's escaped backslash
+    profile["game_exe"] = 'x.exe" injected'
+    with pytest.raises(ValueError):
+        image_profile.profile_header(profile)
+
+
+def test_evolution_profile_constants_and_hook_names():
+    evo = json.loads((REPO / "data" / "evolution" / "default.profile.json").read_text())
+    header = image_profile.profile_header(evo)
+    assert "#define FCI_GAMEVIEW_INPUT 0x000008C8u" in header
+    assert "fci_override_00362594" in header
+    assert evo["replacements"]["sub_00196D41"][:3:2] == ["gate", "00220200"]  # Instincts' movie gate
+    bad = dict(evo, constants={"OTHER": ["0x00000001", "not an FCI_ name"]})
+    with pytest.raises(ValueError):
+        image_profile.profile_header(bad)
+    bad = dict(evo, replacements=dict(evo["replacements"], sub_00075C3E=["prehook", "why", "not hex"]))
+    with pytest.raises(ValueError):
+        image_profile.profile_header(bad)

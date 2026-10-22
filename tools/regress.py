@@ -7,7 +7,7 @@ variables) in a folder of its own with copied fixtures, drives the pad, captures
   - each captured frame is not black,
   - each frame against its reference: a 160x120 greyscale copy, by the mean absolute difference and
     by the worst 8x8 block (a missing piece of a model is local),
-  - scenario extras (one window across relaunches).
+  - scenario extras (one window across relaunches; the Z: cache copies carry the disc files' times).
 References and fixtures come from the game, so they live in the test folder (FCI_REGRESS, default
 build/regress), never in Git. Fixtures, each copied in once:
   save-tunnel        a save folder whose checkpoint is Story Mode's Training tunnel
@@ -162,6 +162,96 @@ SCENARIOS = {
         },
     },
 }
+
+
+# Evolution (FCI_TITLE=evolution): each run makes a new profile, so no fixtures; the attract video that
+# follows a return to the main menu is skipped with the intros
+EVO_TO_MENU = ["wait:title", "sleep:2", "pad:start:200", "sleep:4", "pad:a:200", "sleep:4"]
+# 3D frames start with the level's opening scene in the jeep (about 20 s); the gun is free after it
+EVO_TO_GAME = EVO_TO_MENU + ["pad:a:200", "sleep:4", "pad:a:200", "wait:ingame", "sleep:25"]
+# Map Editor (a relaunch into the editor), Skip Xbox Live Sign-In, OK, Create a New Map, Tropical: the terrain tool
+EVO_TO_EDITOR = (
+    EVO_TO_MENU
+    + ["pad:down:150", "sleep:0.5"] * 3
+    + ["pad:a:200", "sleep:28", "pad:down:150", "sleep:0.5", "pad:a:200", "sleep:2", "pad:up:150", "sleep:0.5"]
+    + ["pad:a:200", "sleep:5", "pad:a:200", "sleep:5", "pad:a:200", "sleep:20"]
+)
+EVO_SCENARIOS = {
+    "boot": {
+        "what": "Evolution boots to the title screen (intro movies skipped)",
+        "kind": "driven",
+        "save": None,
+        "seconds": 15,
+        "steps": ["wait:title", "wait:frames:60", "capture"],
+        "block": 140,  # the title's background is a video
+        "mean": 20,
+    },
+    "menu": {
+        "what": "Start: a new profile (Jack Carver) on the virtual keyboard, accepted, the main menu",
+        "kind": "driven",
+        "save": None,
+        "seconds": 25,
+        "steps": EVO_TO_MENU + ["capture"],
+        "block": 140,  # the menu backgrounds are videos and the curtain sweeps: only a gross change counts
+        "mean": 20,
+        # the Z: copies carry the disc files' times, or every boot copies them again (runtime patch 0020)
+        "cache_times": True,
+    },
+    "story": {
+        "what": "Story Mode, Easy: the first level in the jeep's mounted gun, then the stick turns it",
+        "kind": "driven",
+        "save": None,
+        "seconds": 85,
+        "steps": EVO_TO_GAME + ["capture", "pad:rleft:1500", "sleep:1", "capture"],
+        # the jeep drives on: a second earlier or later is another view, so only a gross change counts
+        "block": 170,
+        "mean": 40,
+    },
+    "mouse-aim": {
+        "what": "direct mouse aim in the first level: 1000 counts turn the gun 50 degrees and back",
+        "kind": "driven",
+        "save": None,
+        "seconds": 85,
+        "steps": EVO_TO_GAME
+        + ["capture", "mouse:1000:0", "sleep:0.5", "capture", "mouse:-1000:0", "sleep:0.5", "capture"],
+        "block": 170,  # the jeep drives on, as in story
+        "mean": 40,
+    },
+    "editor-terrain": {
+        "what": "Map Editor from the main menu (a relaunch): a new Tropical map, Y raises a hill with the terrain tool",
+        "kind": "driven",
+        "save": None,
+        "seconds": 120,
+        "steps": EVO_TO_EDITOR + ["capture", "pad:y:3000", "sleep:1", "capture"],
+        "block": 60,
+        "mean": 15,
+        "log": [r"relaunch: \Device\CdRom0;ige.xbe"],
+    },
+    "editor-jump": {
+        "what": "Map Editor: Jump In Map (Back) walks the new map",
+        "kind": "driven",
+        "save": None,
+        "seconds": 130,
+        "steps": EVO_TO_EDITOR + ["pad:back:300", "sleep:12", "capture", "pad:lup:1500", "sleep:0.5", "capture"],
+        "block": 60,
+        "mean": 15,
+    },
+    "quit-menu": {
+        "what": "pause, Quit to Main Menu, OK: the game relaunches and shows the main menu",
+        "kind": "driven",
+        "save": None,
+        "seconds": 90,
+        "steps": EVO_TO_GAME
+        + ["pad:start:200", "sleep:2"]
+        + ["pad:down:150", "sleep:0.4"] * 6
+        + ["pad:a:200", "sleep:2", "pad:up:200", "sleep:1", "pad:a:200", "sleep:12", "capture"],
+        "block": 170,  # as menu, and the relaunch lands anywhere in the background video's loop (144 seen)
+        "mean": 20,
+        "log": ["relaunch: \\Device\\CdRom0;default.xbe"],
+    },
+}
+if game_driver.TITLE.key == "evolution":
+    SCENARIOS, FIXTURE_NAMES = EVO_SCENARIOS, ()
 
 
 def fixture(name, src):
@@ -346,8 +436,8 @@ def grab(h, path):
 
 
 def run_flow(sc, folder):
-    shutil.copy2(GAME_EXE, folder / "FarCryInstincts.exe")
-    shutil.copy2(EDITOR_EXE, folder / "FarCryInstinctsEditor.exe")
+    shutil.copy2(GAME_EXE, folder / GAME_EXE.name)
+    shutil.copy2(EDITOR_EXE, folder / EDITOR_EXE.name)
     shutil.copy2(KINIT, folder / "fci-kinit.dll")
     shutil.copytree(FIXTURES / "save-tunnel", folder / "save")
     (folder / "fci.ini").write_text(
@@ -369,7 +459,7 @@ def run_flow(sc, folder):
     env = dict(os.environ)
     env.pop("RECOMP_FCI_FRAME", None)
     start = time.time()
-    child = game_driver.launch([str(folder / "FarCryInstincts.exe")], cwd=folder, env=env)
+    child = game_driver.launch([str(folder / GAME_EXE.name)], cwd=folder, env=env)
     frames, windows = [], []
     try:
         early = flow_timeline(sc, folder, start, child, frames, windows)
@@ -396,6 +486,19 @@ def flow_timeline(sc, folder, start, child, frames, windows):
     return child.poll()
 
 
+def cache_time_problems(cache, disc):
+    """the game's copies in its Z: cache against the disc files: the game copies again when the times differ"""
+    originals = {p.name.lower(): p for p in disc.glob("*.ss2")} if disc.is_dir() else {}
+    copies = sorted(cache.glob("*.ss2")) if cache.is_dir() else []
+    if not copies:
+        return [f"no cache copies in {cache}"]
+    return [
+        f"cache copy {c.name} has another time than the disc's"
+        for c in copies
+        if c.name.lower() in originals and c.stat().st_mtime_ns != originals[c.name.lower()].stat().st_mtime_ns
+    ]
+
+
 def check(name, sc, result, folder, bless):
     problems, notes = [], []
     text = "".join(p.read_text(errors="replace") for p in result["logs"] if p.exists())
@@ -412,6 +515,8 @@ def check(name, sc, result, folder, bless):
     for needle, count in sc.get("log_count", {}).items():
         if text.count(needle) < count:
             problems.append(f"log line {needle!r} seen {text.count(needle)} times, {count} expected")
+    if sc.get("cache_times"):
+        problems += cache_time_problems(folder / "save" / "Cache" / "sounds_xb", GAME_DIR / "sounds_xb")
     if "windows" in result:
         w = result["windows"]
         if any(x["frames"] != 1 for x in w):
@@ -491,7 +596,8 @@ def run(names, bless):
     import hashlib
 
     for label, exe in (("game", GAME_EXE), ("editor", EDITOR_EXE)):
-        report["builds"][label] = hashlib.sha256(exe.read_bytes()).hexdigest()
+        if exe.exists():  # a game without its editor build
+            report["builds"][label] = hashlib.sha256(exe.read_bytes()).hexdigest()
     rows = []
     for name in names:
         sc = SCENARIOS[name]

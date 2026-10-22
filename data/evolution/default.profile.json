@@ -1,0 +1,62 @@
+{
+  "id": "fcie-original-xbox-game",
+  "image_name": "default.xbe",
+  "image_sha256": "ced4d535bbfcc66567d0f95772d14f965f970fdeaf39cfbd556142c7c2ada68d",
+  "image_bytes": 5337088,
+  "entry_va": "0x0035D9BF",
+  "code_end": "0x005C47C4",
+  "descriptor_helper": "0x00362594",
+  "descriptor_jump": "0x003625B4",
+  "replacements": {
+    "sub_00362594": [
+      "override",
+      "The same 37-byte descriptor helper as Instincts' 004B03B4 (addresses masked), sgdt/cli/xchg GDT/sti/ljmp 8"
+    ],
+    "sub_00433763": [
+      "prehook",
+      "DirectSound 5849 effects-image download (Instincts' 00580363 by masked bytes, unique): registers the DSP doorbell with the APU acknowledgement (fci_manual.c)",
+      "00580363"
+    ],
+    "sub_0017B3AB": [
+      "prehook",
+      "the pad poll (XGetDeviceChanges, XInputOpen/Close, XInputGetState 00478C6A per port), Instincts' Input_PollPads: counts polls for RECOMP_FCI_STATUS",
+      "001F6C00"
+    ],
+    "sub_00196D41": [
+      "gate",
+      "the movie player (path, ...), cdecl, called after sprintf(buffer, \"%s%s\", data root, \"Videos\\<name>.bik\") as Instincts' Movie_Play: RECOMP_FCI_SKIP_INTROS / RECOMP_FCI_SKIP_MOVIES (fci_disk.c, re/notes/MOVIES.md)",
+      "00220200"
+    ],
+    "sub_0019674C": [
+      "prehook",
+      "the other video player (PREY.bik, data-named videos), cdecl, the path first: logged (fci_disk.c)"
+    ],
+    "sub_0017EED6": [
+      "prehook",
+      "Console_RegisterFloat (eax = console [0056B4E4]; name, storage, default, flags, help; stdcall, as Instincts' 001FDCD0; Engine3D's e_obj_* at 00343B3C): records the variable and applies RECOMP_CVAR_<name> (fci_cvars.c)",
+      "001FDCD0"
+    ],
+    "sub_0017EFCD": [
+      "prehook",
+      "Console_RegisterInt (as Console_RegisterFloat; e_detail_objects at 003432FC)",
+      "001FDED0"
+    ],
+    "sub_000B8CF5": [
+      "prehook",
+      "Camera_BuildViews(view), as Instincts' 000F0500: calls the actor's Player_ProcessInput (vtable +0xD4) with view+0x8C8 at 000B905D; counts 3D frames and records the view for RECOMP_FCI_STATUS and direct mouse aim",
+      "000F0500"
+    ],
+    "sub_00075C3E": [
+      "prehook",
+      "Player_ProcessInput(block), as Instincts' 00098AE0 (the same reads: angles +0x18, turnYaw +0xBC, turnPitch +0xC0; vtable 004B04E8 slot +0xD4): direct mouse aim (fci_aim.c)",
+      "00098AE0"
+    ]
+  },
+  "evidence": "Exploratory Evolution profile: descriptor helper by masked bytes (unique match); code end = BINKDATA end (as Instincts' 0070C6E4).",
+  "constants": {
+    "FCI_GAMEVIEW_INPUT": [
+      "0x000008C8",
+      "the view's ViewInput block: Camera_BuildViews passes view+0x8C8 to Player_ProcessInput (000B9056)"
+    ]
+  }
+}
